@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.header {
+  background-color: rgb(215, 215, 215);
+  display: flex;
+}
+
+.header .icon {
+  background-color: lightcoral;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .page-top {
+  padding: 10px 20px;
+}
+
+.header .source {
+  background-color: lightblue;
+}
+
+.header .source-list > li {
+  background-color: lightpink;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.header .source-list li:first-child {
+  margin-left: 0;
+}
+
+.header div.access {
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: auto;
+}
