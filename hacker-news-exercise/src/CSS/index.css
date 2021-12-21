@@ -6,28 +6,31 @@
 }
 
 .header {
-  background-color: rgb(215, 215, 215);
+  background-color: rgb(255, 102, 0);
   display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header .icon {
-  background-color: lightcoral;
-  padding: 10px;
+  /* background-color: lightcoral; */
+  padding: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .header .page-top {
-  padding: 10px 20px;
+  padding: 10px 0px;
 }
 
 .header .source {
-  background-color: lightblue;
+  /* background-color: lightblue; */
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .header .source-list > li {
-  background-color: lightpink;
+  /* background-color: lightpink; */
   margin: 0 10px;
   display: inline-block;
 }
@@ -36,11 +39,13 @@
   margin-left: 0;
 }
 
-.header div.access {
+.header .access {
   background-color: lightgreen;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  padding-right: 20px;
+  padding-left: 50px;
   margin-left: auto;
 }

@@ -1,12 +1,22 @@
 import React from "react"
 
+import Source from "./Source"
+import Access from "./Access"
+
 const Header = ({ header }) => {
   const { icon, source, sourceList } = header
   return (
     <div className="header">
-      <div className="icon">ICON</div>
+      <div className="icon">
+        <a href="#" className="icon">
+          <img
+            src="https://news.ycombinator.com/y18.gif"
+            alt="Y combinator logo"
+          />
+        </a>
+      </div>
       <div className="page-top">
-        <div className="source">{source}</div>
+        <Source source={source} />
         <ul className="source-list">
           <li>News</li>
           <li>Threads</li>
@@ -15,7 +25,7 @@ const Header = ({ header }) => {
           <li>Ask</li>
         </ul>
       </div>
-      <div className="access">Login</div>
+      <Access />
     </div>
   )
 }
