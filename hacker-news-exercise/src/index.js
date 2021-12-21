@@ -25,30 +25,26 @@ const forum = {
       },
       {
         key: 2,
-        text: "threads",
-      },
-      {
-        key: 3,
         text: "past",
       },
       {
-        key: 4,
+        key: 3,
         text: "comments",
       },
       {
-        key: 5,
+        key: 4,
         text: "ask",
       },
       {
-        key: 6,
+        key: 5,
         text: "show",
       },
       {
-        key: 7,
+        key: 6,
         text: "jobs",
       },
       {
-        key: 8,
+        key: 7,
         text: "submit",
       },
     ],

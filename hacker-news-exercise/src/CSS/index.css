@@ -6,17 +6,31 @@
 }
 
 .header {
-  background-color: rgb(255, 102, 0);
+  background-color: rgb(255, 102, 71);
   display: flex;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header .icon {
-  /* background-color: lightcoral; */
-  padding: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px 10px;
+}
+
+.header .icon-button {
+  background: none;
+  color: inherit;
+  border: 1px solid white;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .icon-image {
+  height: 30px;
+  width: 30px;
 }
 
 .header .page-top {
@@ -40,7 +54,7 @@
 }
 
 .header .access {
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
   display: flex;
   justify-content: center;
   align-items: center;
