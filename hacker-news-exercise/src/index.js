@@ -1,6 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
+import Logo from "./Assets/y-combinator-logo.png"
+
 import "./CSS/minireset.min.css"
 import "./CSS/index.css"
 
@@ -50,7 +52,7 @@ const forum = {
     ],
     icon: {
       link: "#",
-      imageSource: "https://news.ycombinator.com/y18.gif",
+      logo: Logo,
     },
   },
 }

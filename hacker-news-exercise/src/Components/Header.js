@@ -1,19 +1,15 @@
 import React from "react"
 
+import Icon from "./Icon"
 import Source from "./Source"
 import Access from "./Access"
 
-import Logo from "../Assets/y-combinator-logo.png"
-
 const Header = ({ header }) => {
-  const { icon, source, sourceList } = header
+  const { icon, source } = header
+  const { logo } = icon
   return (
     <div className="header">
-      <div className="icon">
-        <button href="#" className="icon-button">
-          <img className="icon-image" src={Logo} alt="Y combinator logo" />
-        </button>
-      </div>
+      <Icon logo={logo} />
       <div className="page-top">
         <Source source={source} />
         <ul className="source-list">
