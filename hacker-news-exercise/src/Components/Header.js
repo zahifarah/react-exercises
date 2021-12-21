@@ -2,23 +2,19 @@ import React from "react"
 
 import Icon from "./Icon"
 import Source from "./Source"
+import SourceList from "./SourceList"
 import Access from "./Access"
 
 const Header = ({ header }) => {
-  const { icon, source } = header
+  const { icon, source, sourceList } = header
   const { logo } = icon
+
   return (
     <div className="header">
       <Icon logo={logo} />
       <div className="page-top">
         <Source source={source} />
-        <ul className="source-list">
-          <li>News</li>
-          <li>Threads</li>
-          <li>Comments</li>
-          <li>Show</li>
-          <li>Ask</li>
-        </ul>
+        <SourceList sourceList={sourceList} />
       </div>
       <Access />
     </div>

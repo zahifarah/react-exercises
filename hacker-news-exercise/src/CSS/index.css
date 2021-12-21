@@ -6,7 +6,7 @@
 }
 
 .header {
-  background-color: rgb(255, 102, 71);
+  background-color: rgb(255, 123, 96);
   display: flex;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -38,15 +38,17 @@
 }
 
 .header .source {
-  /* background-color: lightblue; */
   font-size: 20px;
   font-weight: 900;
 }
 
+.header .source-list {
+  /* background-color: cyan; */
+}
+
 .header .source-list > li {
-  /* background-color: lightpink; */
   margin: 0 10px;
-  display: inline-block;
+  display: inline;
 }
 
 .header .source-list li:first-child {

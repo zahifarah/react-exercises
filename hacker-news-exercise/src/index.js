@@ -22,31 +22,31 @@ const forum = {
     source: "Hacker News",
     sourceList: [
       {
-        key: 1,
+        id: 1,
         text: "new",
       },
       {
-        key: 2,
+        id: 2,
         text: "past",
       },
       {
-        key: 3,
+        id: 3,
         text: "comments",
       },
       {
-        key: 4,
+        id: 4,
         text: "ask",
       },
       {
-        key: 5,
+        id: 5,
         text: "show",
       },
       {
-        key: 6,
+        id: 6,
         text: "jobs",
       },
       {
-        key: 7,
+        id: 7,
         text: "submit",
       },
     ],
