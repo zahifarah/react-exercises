@@ -4,23 +4,59 @@ import ReactDOM from "react-dom"
 import "./CSS/minireset.min.css"
 import "./CSS/index.css"
 
-const App = () => {
+import Header from "./Components/Header"
+
+const App = ({ forum }) => {
+  const { header } = forum
   return (
-    <div className="header">
-      <div className="icon">ICON</div>
-      <div className="page-top">
-        <div className="source">Hacker News</div>
-        <ul className="source-list">
-          <li>News</li>
-          <li>Threads</li>
-          <li>Comments</li>
-          <li>Show</li>
-          <li>Ask</li>
-        </ul>
-      </div>
-      <div className="access">Login</div>
-    </div>
+    <>
+      <Header header={header} />
+    </>
   )
 }
 
-ReactDOM.render(<App />, document.querySelector("#root"))
+const forum = {
+  header: {
+    source: "Hacker News",
+    sourceList: [
+      {
+        key: 1,
+        text: "new",
+      },
+      {
+        key: 2,
+        text: "threads",
+      },
+      {
+        key: 3,
+        text: "past",
+      },
+      {
+        key: 4,
+        text: "comments",
+      },
+      {
+        key: 5,
+        text: "ask",
+      },
+      {
+        key: 6,
+        text: "show",
+      },
+      {
+        key: 7,
+        text: "jobs",
+      },
+      {
+        key: 8,
+        text: "submit",
+      },
+    ],
+    icon: {
+      link: "#",
+      imageSource: "https://news.ycombinator.com/y18.gif",
+    },
+  },
+}
+
+ReactDOM.render(<App forum={forum} />, document.querySelector("#root"))
