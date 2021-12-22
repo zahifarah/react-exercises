@@ -3,17 +3,20 @@
 }
 
 .content {
-  display: flex;
+  /* display: flex; */
 }
 
-.content .position {
+.post {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 7px;
+  margin-bottom: 15px;
 }
 
 .content .ranking {
+  /* background-color: salmon; */
+}
+
+.content .ranking-number {
+  display: inline-block;
   padding: 3px 5px;
   font-size: 22px;
   color: var(--gray-color);
@@ -23,6 +26,8 @@
   background: none;
   color: inherit;
   padding-right: 5px;
+  display: inline-block;
+  /* background-color: lime; */
 }
 
 .content .icon-button {
@@ -38,8 +43,9 @@
 }
 
 .content .title {
-  font-size: 22px;
+  font-size: 24px;
   letter-spacing: 0.5px;
+  padding-bottom: 3px;
 }
 
 .content .title-source {
@@ -48,7 +54,7 @@
 }
 
 .content .subtitle {
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.3px;
   color: var(--gray-color);
 }

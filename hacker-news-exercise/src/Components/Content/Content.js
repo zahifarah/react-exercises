@@ -1,27 +1,35 @@
-import React from "react"
+import React, { useReducer } from "react"
 
 import "../../CSS/Content.css"
 
-const Content = () => {
+const Content = ({ content }) => {
+  console.log(content)
   return (
     <div className="content">
-      <div className="position">
-        <div className="ranking">1.</div>
-        <div className="icon">
-          <button href="#" className="icon-button">
-            <i class="fas fa-arrow-up fa-lg icon-image"></i>
-          </button>
+      {content.map((item) => (
+        <div className="post" key={item.id}>
+          <React.Fragment>
+            <div className="ranking">
+              <div className="ranking-number">{item.ranking}.</div>
+              <div className="icon">
+                <button href="#" className="icon-button">
+                  <i className="fas fa-arrow-up fa-lg icon-image"></i>
+                </button>
+              </div>
+            </div>
+            <div className="post-headers">
+              <div className="title">
+                {item.title}{" "}
+                <span className="title-source">({item.source})</span>
+              </div>
+              <div className="subtitle">
+                {item.upvotes} points by {item.user} 54 mins ago | hide |{" "}
+                {item.comments} comments
+              </div>
+            </div>
+          </React.Fragment>
         </div>
-      </div>
-      <div className="post">
-        <div className="title">
-          NASA kills 50 plants!{" "}
-          <span className="title-source">(positive.security)</span>
-        </div>
-        <div className="subtitle">
-          125 points by Acrah 54 mins ago | hide | 22 comments
-        </div>
-      </div>
+      ))}
     </div>
   )
 }

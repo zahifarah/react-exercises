@@ -31,7 +31,7 @@
 }
 
 .header .source {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 900;
   display: inline-block;
   cursor: pointer;
@@ -40,6 +40,7 @@
 .header .source-list {
   display: inline;
   margin-left: 15px;
+  font-size: 22px;
 }
 
 .header .source-list > li {
@@ -48,9 +49,9 @@
   cursor: pointer;
 }
 
-.header .source-list li:first-child {
+/* .header .source-list li:first-child {
   margin-left: 0;
-}
+} */
 
 .header .access {
   display: flex;
@@ -60,4 +61,5 @@
   padding-right: 20px;
   margin-left: auto;
   cursor: pointer;
+  font-size: 22px;
 }

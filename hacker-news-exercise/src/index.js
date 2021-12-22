@@ -9,55 +9,110 @@ import "./CSS/index.css"
 import Header from "./Components/Header/Header"
 import Content from "./Components/Content/Content"
 
-const App = ({ forum }) => {
-  const { header } = forum
+const App = ({ header, content }) => {
   return (
     <>
       <Header header={header} />
       <div className="page-space"></div>
-      <Content />
+      <Content content={content} />
     </>
   )
 }
 
-const forum = {
-  header: {
-    source: "Hacker News",
-    sourceList: [
-      {
-        id: 1,
-        text: "new",
-      },
-      {
-        id: 2,
-        text: "past",
-      },
-      {
-        id: 3,
-        text: "comments",
-      },
-      {
-        id: 4,
-        text: "ask",
-      },
-      {
-        id: 5,
-        text: "show",
-      },
-      {
-        id: 6,
-        text: "jobs",
-      },
-      {
-        id: 7,
-        text: "submit",
-      },
-    ],
-    icon: {
-      link: "#",
-      logo: Logo,
+const headerData = {
+  source: "Hacker News",
+  sourceList: [
+    {
+      id: 1,
+      text: "new",
     },
+    {
+      id: 2,
+      text: "past",
+    },
+    {
+      id: 3,
+      text: "comments",
+    },
+    {
+      id: 4,
+      text: "ask",
+    },
+    {
+      id: 5,
+      text: "show",
+    },
+    {
+      id: 6,
+      text: "jobs",
+    },
+    {
+      id: 7,
+      text: "submit",
+    },
+  ],
+  icon: {
+    link: "#",
+    logo: Logo,
   },
 }
 
-ReactDOM.render(<App forum={forum} />, document.querySelector("#root"))
+const contentInfo = [
+  {
+    id: 1,
+    ranking: 1,
+    title: "Nasa kills 50 plants!",
+    source: "evolution.com",
+    upvotes: 2821,
+    user: "Acrah",
+    submitted_at: "1988-04-07 07:30:00",
+    comments: 1203,
+  },
+  {
+    id: 2,
+    ranking: 2,
+    title:
+      "Family owned Zammaria corporation takes-on the F&B industry in Europe",
+    source: "wsj.com",
+    upvotes: 1993,
+    user: "ThE_nYghTT",
+    submitted_at: "2021-04-07 12:30:00",
+    comments: 620,
+  },
+  {
+    id: 3,
+    ranking: 3,
+    title: "Lebanon: the story of a failed nation",
+    source: "decrypt.com",
+    upvotes: 1566,
+    user: "ThE_nYghTT",
+    submitted_at: "2021-04-07 12:30:00",
+    comments: 900,
+  },
+  {
+    id: 4,
+    ranking: 4,
+    title:
+      "Netflix Embraces GraphQL Microservices for Rapid Application Development",
+    source: "infoq.com",
+    upvotes: 789,
+    user: "raminos",
+    submitted_at: "2021-04-07 12:30:00",
+    comments: 183,
+  },
+  {
+    id: 5,
+    ranking: 5,
+    title: "Why be happy when you can be sad? Emo teenagers speak out",
+    source: "sexandscandal.com",
+    upvotes: 550,
+    user: "dOwN_wiTh_CaPiTaLi$m",
+    submitted_at: "2021-04-07 12:30:00",
+    comments: 800,
+  },
+]
+
+ReactDOM.render(
+  <App header={headerData} content={contentInfo} />,
+  document.querySelector("#root")
+)
