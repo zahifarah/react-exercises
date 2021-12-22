@@ -7,14 +7,14 @@ import "./CSS/minireset.min.css"
 import "./CSS/index.css"
 
 import Header from "./Components/Header/Header"
-import Content from "./Components/Content/Content"
+import PostList from "./Components/Content/PostList"
 
 const App = ({ header, content }) => {
   return (
     <>
       <Header header={header} />
       <div className="page-space"></div>
-      <Content content={content} />
+      <PostList content={content} />
     </>
   )
 }
