@@ -6,7 +6,7 @@ import PostHeaders from "./PostHeaders"
 const Post = ({ post }) => {
   return (
     <React.Fragment>
-      <div className="post" key={post.id}>
+      <div className="post">
         <Ranking item={post} />
         <PostHeaders post={post} />
       </div>
