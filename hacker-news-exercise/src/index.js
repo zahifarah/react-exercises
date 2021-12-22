@@ -6,13 +6,15 @@ import Logo from "./Assets/y-combinator-logo.png"
 import "./CSS/minireset.min.css"
 import "./CSS/index.css"
 
-import Header from "./Components/Header"
+import Header from "./Components/Header/Header"
+import Content from "./Components/Content/Content"
 
 const App = ({ forum }) => {
   const { header } = forum
   return (
     <>
       <Header header={header} />
+      <Content />
     </>
   )
 }

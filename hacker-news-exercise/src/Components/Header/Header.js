@@ -5,6 +5,8 @@ import Source from "./Source"
 import SourceList from "./SourceList"
 import Access from "./Access"
 
+import "../../CSS/Header.css"
+
 const Header = ({ header }) => {
   const { icon, source, sourceList } = header
   const { logo } = icon
