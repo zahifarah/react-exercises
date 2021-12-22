@@ -14,6 +14,7 @@ const App = ({ forum }) => {
   return (
     <>
       <Header header={header} />
+      <div className="page-space"></div>
       <Content />
     </>
   )
