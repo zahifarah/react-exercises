@@ -110,6 +110,16 @@ const contentInfo = [
     submitted_at: "2021-04-07 12:30:00",
     comments: 800,
   },
+  {
+    id: 6,
+    ranking: 6,
+    title: "Ccoolccat: not so cool after all",
+    source: "basho.com",
+    upvotes: 420,
+    user: "Walt3r_Mur$h",
+    submitted_at: "2021-04-07 12:30:00",
+    comments: 69,
+  },
 ]
 
 ReactDOM.render(
