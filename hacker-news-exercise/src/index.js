@@ -65,7 +65,7 @@ const contentInfo = [
     source: "evolution.com",
     upvotes: 2821,
     user: "Acrah",
-    submitted_at: "1988-04-07 07:30:00",
+    submitted_at: "2021-12-21 07:30:00",
     comments: 1203,
   },
   {
@@ -76,7 +76,7 @@ const contentInfo = [
     source: "wsj.com",
     upvotes: 1993,
     user: "ThE_nYghTT",
-    submitted_at: "2021-04-07 12:30:00",
+    submitted_at: "2021-12-20 12:30:00",
     comments: 620,
   },
   {
@@ -85,8 +85,8 @@ const contentInfo = [
     title: "Lebanon: the story of a failed nation",
     source: "decrypt.com",
     upvotes: 1566,
-    user: "ThE_nYghTT",
-    submitted_at: "2021-04-07 12:30:00",
+    user: "vaylx",
+    submitted_at: "2019-10-17 12:30:00",
     comments: 900,
   },
   {
@@ -97,7 +97,7 @@ const contentInfo = [
     source: "infoq.com",
     upvotes: 789,
     user: "raminos",
-    submitted_at: "2021-04-07 12:30:00",
+    submitted_at: "2021-12-16 07:30:00",
     comments: 183,
   },
   {
@@ -117,7 +117,7 @@ const contentInfo = [
     source: "basho.com",
     upvotes: 420,
     user: "Walt3r_Mur$h",
-    submitted_at: "2021-04-07 12:30:00",
+    submitted_at: "2021-12-01 12:30:00",
     comments: 69,
   },
 ]
