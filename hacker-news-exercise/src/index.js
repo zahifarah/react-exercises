@@ -12,9 +12,11 @@ import PostList from "./Components/Content/PostList"
 const App = ({ header, content }) => {
   return (
     <>
-      <Header header={header} />
-      <div className="page-space"></div>
-      <PostList content={content} />
+      <div className="center">
+        <Header header={header} />
+        <div className="page-space"></div>
+        <PostList content={content} />
+      </div>
     </>
   )
 }
