@@ -1,53 +1,12 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import PropTypes from "prop-types"
+
+import Forum from "./Components/Forum"
 
 import Logo from "./Assets/y-combinator-logo.png"
 
 import "./CSS/minireset.min.css"
 import "./CSS/index.css"
-
-import Header from "./Components/Header/Header"
-import PostList from "./Components/Content/PostList"
-
-const App = ({ header, content }) => {
-  return (
-    <>
-      <div className="center">
-        <Header header={header} />
-        <div className="page-space"></div>
-        <PostList content={content} />
-      </div>
-    </>
-  )
-}
-App.propTypes = {
-  header: PropTypes.shape({
-    source: PropTypes.string.isRequired,
-    sourceList: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        text: PropTypes.string.isRequired,
-      })
-    ),
-    icon: PropTypes.shape({
-      link: PropTypes.string.isRequired,
-      logo: PropTypes.string.isRequired,
-    }),
-  }),
-  content: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      ranking: PropTypes.number.isRequired,
-      title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-      upvotes: PropTypes.number.isRequired,
-      by: PropTypes.string.isRequired,
-      submitted_at: PropTypes.string.isRequired,
-      comments: PropTypes.number.isRequired,
-    })
-  ),
-}
 
 const headerData = {
   source: "Hacker News",
@@ -153,6 +112,6 @@ const contentInfo = [
 ]
 
 ReactDOM.render(
-  <App header={headerData} content={contentInfo} />,
+  <Forum header={headerData} content={contentInfo} />,
   document.querySelector("#root")
 )
