@@ -1,0 +1,65 @@
+.header {
+  background-color: rgb(255, 102, 0);
+  display: flex;
+}
+
+.header .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.header .icon-button {
+  background: none;
+  color: inherit;
+  border: 1px solid white;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .icon-image {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.header .page-top {
+  padding: 10px 0px;
+}
+
+.header .source {
+  font-size: 24px;
+  font-weight: 900;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header .source-list {
+  display: inline;
+  margin-left: 15px;
+  font-size: 22px;
+}
+
+.header .source-list > li {
+  margin: 0 10px;
+  display: inline;
+  cursor: pointer;
+}
+
+/* .header .source-list li:first-child {
+  margin-left: 0;
+} */
+
+.header .access {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-right: 20px;
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 22px;
+}

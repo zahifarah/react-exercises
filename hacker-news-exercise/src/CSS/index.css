@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+#root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+  margin-top: 15px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(246, 246, 239);
+}
+
+.page-space {
+  background-color: inherit;
+  border-color: inherit;
+  height: 10px;
+}
