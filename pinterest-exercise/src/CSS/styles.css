@@ -9,4 +9,9 @@
   display: block;
   display: flex;
   flex-direction: row;
+  background-color: lime;
+}
+
+.content-card {
+  margin: 8px;
 }
