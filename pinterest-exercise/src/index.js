@@ -6,12 +6,13 @@ import images from "./images"
 import Profile from "./Components/Profile"
 
 import "./CSS/minireset.min.css"
+import "./CSS/styles.css"
 
 const aviationExplorer = {
   headerData: {
     heroTitle: "Aviation Explorer",
     heroLogo: images.Logo,
-    heroStats: {
+    heroStatList: {
       boards: 37,
       pins: 8.9,
       likes: 186,

@@ -1,0 +1,30 @@
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-logo {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  margin-top: 15px;
+}
+
+.hero-title {
+  font-size: 32px;
+  margin: 10px;
+}
+
+.hero-stats {
+  display: flex;
+}
+
+.hero-stat {
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
