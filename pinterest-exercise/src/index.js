@@ -5,6 +5,8 @@ import images from "./images"
 
 import Profile from "./Components/Profile"
 
+import "./CSS/minireset.min.css"
+
 const aviationExplorer = {
   headerData: {
     heroTitle: "Aviation Explorer",
