@@ -10,19 +10,19 @@ const Header = ({ header }) => {
       <h1 className="hero-title">{header.heroTitle}</h1>
       <div className="hero-stats">
         <div className="hero-stat boards">
-          {heroStatList.boards} <div>boards</div>
+          {heroStatList.boards} <span>Boards</span>
         </div>
         <div className="hero-stat followers">
-          {heroStatList.followers} <div>followers</div>
+          {heroStatList.followers} <span>Followers</span>
         </div>
         <div className="hero-stat following">
-          {heroStatList.following} <div>following</div>
+          {heroStatList.following} <span>Following</span>
         </div>
         <div className="hero-stat likes">
-          {heroStatList.likes} <div>likes</div>
+          {heroStatList.likes} <span>Likes</span>
         </div>
         <div className="hero-stat pins">
-          {heroStatList.pins} <div>pins</div>
+          {heroStatList.pins} <span>Pins</span>
         </div>
       </div>
     </header>
