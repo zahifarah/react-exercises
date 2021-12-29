@@ -3,20 +3,13 @@ import ReactDOM from "react-dom"
 
 import images from "./images"
 
-const Profile = ({ profileData }) => {
-  console.log(profileData)
-  return (
-    <>
-      <h2>Hello World!</h2>
-    </>
-  )
-}
+import Profile from "./Components/Profile"
 
 const aviationExplorer = {
   headerData: {
     heroTitle: "Aviation Explorer",
     heroLogo: images.Logo,
-    statList: {
+    heroStats: {
       boards: 37,
       pins: 8.9,
       likes: 186,
