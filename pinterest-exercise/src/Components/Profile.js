@@ -9,6 +9,11 @@ const Profile = ({ profileData }) => {
     <>
       <div className="container">
         <Header header={header} />
+        <div className="content">
+          {content.map((card) => (
+            <h2>{card.title}</h2>
+          ))}
+        </div>
       </div>
     </>
   )
