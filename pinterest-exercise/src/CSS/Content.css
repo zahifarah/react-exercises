@@ -12,6 +12,7 @@
   border: 3px black solid;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .card-titles {
@@ -43,8 +44,27 @@
   border-radius: 10px;
 }
 
-.banner-pin {
-  position: relative;
+.card-pins {
+  background-color: rgba(84, 84, 84, 0.53);
+  position: absolute;
+  top: 59%;
+  left: 5%;
+  color: white;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding: 5px 3px;
+}
+
+.card-pins .pin-icon {
+  margin: 0 3px;
+  padding-right: 2px;
+}
+
+.times_pinned {
+  letter-spacing: 0.5px;
 }
 
 .thumbnails {

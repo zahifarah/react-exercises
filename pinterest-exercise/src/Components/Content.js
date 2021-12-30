@@ -15,7 +15,10 @@ const Content = ({ content }) => {
           <div className="banner">
             <img className="banner-image" src={card.banner} alt="" />
           </div>
-          <span className="banner-pin">{card.times_pinned}</span>
+          <div className="card-pins">
+            <i class="fas fa-thumbtack fa-xs pin-icon"></i>
+            <span className="times_pinned">{card.times_pinned}</span>
+          </div>
           <div className="thumbnails">
             <img src={card.thumbnail_1} className="thumbnail" alt="" />
             <img src={card.thumbnail_2} className="thumbnail" alt="" />
