@@ -3,15 +3,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.content {
-  display: block;
-  display: flex;
-  flex-direction: row;
-  background-color: lime;
-}
-
-.content-card {
-  margin: 8px;
+  background-color: rgb(240, 240, 240);
 }
