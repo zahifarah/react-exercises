@@ -24,8 +24,8 @@ const aviationExplorer = {
   contentData: [
     {
       id: 1,
-      title: "Aviation 1",
-      subtitle: "Some subtitle 1",
+      title: "Altitudes and whatnot",
+      subtitle: "Narcissus",
       banner: images.Banner1,
       times_pinned: 4850,
       thumbnail_1: images.Thumb1,
@@ -34,8 +34,8 @@ const aviationExplorer = {
     },
     {
       id: 2,
-      title: "Aviation 2",
-      subtitle: "Some subtitle 2",
+      title: "Planes",
+      subtitle: "Moar planes",
       banner: images.Banner2,
       times_pinned: 641,
       thumbnail_1: images.Thumb2,
@@ -44,8 +44,8 @@ const aviationExplorer = {
     },
     {
       id: 3,
-      title: "Aviation 3",
-      subtitle: "Some subtitle 3",
+      title: "Intro to paperplanes",
+      subtitle: "Never say Trevor",
       banner: images.Banner3,
       times_pinned: 209,
       thumbnail_1: images.Thumb3,
@@ -54,8 +54,8 @@ const aviationExplorer = {
     },
     {
       id: 4,
-      title: "Aviation 4",
-      subtitle: "Some subtitle 4",
+      title: "Futuristic Hoe",
+      subtitle: "Ohhhhh yeahh!",
       banner: images.Banner4,
       times_pinned: 1495,
       thumbnail_1: images.Thumb4,
@@ -64,8 +64,8 @@ const aviationExplorer = {
     },
     {
       id: 5,
-      title: "Aviation 5",
-      subtitle: "Some subtitle 5",
+      title: "Space X",
+      subtitle: "Dragon Machu Pichu",
       banner: images.Banner5,
       times_pinned: 1495,
       thumbnail_1: images.Thumb5,
@@ -74,8 +74,8 @@ const aviationExplorer = {
     },
     {
       id: 6,
-      title: "Aviation 6",
-      subtitle: "Some subtitle 6",
+      title: "Kerewassan",
+      subtitle: "Putin 124",
       banner: images.Banner6,
       times_pinned: 75,
       thumbnail_1: images.Thumb6,

@@ -23,17 +23,24 @@
 .hero-stats {
   display: flex;
   margin-bottom: 1rem;
+  color: gray;
 }
 
 .hero-stat {
-  font-size: 21px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin: 0 2.8rem;
+  line-height: 1.3;
 }
 
 .hero-stat > span {
-  font-size: 19px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.hero-header .hero-stat:first-child {
+  color: red;
 }
