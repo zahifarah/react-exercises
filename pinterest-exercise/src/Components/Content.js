@@ -5,7 +5,7 @@ import "../CSS/Content.css"
 const Content = ({ content }) => {
   console.log(content)
   return (
-    <main className="content">
+    <main className="content-container">
       {content.map((card) => (
         <div className="content-card" key={card.id}>
           <div className="card-titles">
