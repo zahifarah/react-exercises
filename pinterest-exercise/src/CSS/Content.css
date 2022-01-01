@@ -1,6 +1,6 @@
 .content-container {
   display: flex;
-  width: 80%;
+  max-width: 900px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,7 @@
 }
 
 .content-card {
-  width: 28%;
+  width: 275px;
   height: 331px;
   margin: 8px;
   display: flex;
