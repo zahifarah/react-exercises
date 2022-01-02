@@ -3,7 +3,7 @@
   --nft-card-bg-color: rgb(25, 39, 61);
   --nft-card-shadow-color: rgb(15, 23, 40);
   --info-headers-color: rgb(239, 244, 251);
-  --info-desc-color: rgb(105, 122, 149);
+  --info-desc-color: rgb(133, 155, 187);
   --eth-cost-color: rgb(116, 248, 243);
   --line-detail-color: rgb(33, 47, 69);
 }
@@ -60,13 +60,15 @@ body {
 }
 
 .artwork__headers {
-  font-size: 22px;
+  font-size: 21px;
   color: var(--info-headers-color);
   margin-bottom: 1rem;
 }
 
 .artwork__desc {
   margin: 1.2rem 0;
+  font-size: 16px;
+  letter-spacing: 0.3px;
 }
 
 .artwork__id {
@@ -74,10 +76,11 @@ body {
 }
 
 .time-and-cost__container {
-  margin: 0 0 1rem 0;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 14px;
 }
 
 .cost__container {
@@ -88,7 +91,11 @@ body {
 }
 
 .eth__icon {
-  margin-right: 0.3rem;
+  margin-right: 0.4rem;
+}
+
+.cost {
+  font-weight: 500;
 }
 
 .time-left__container {
@@ -99,6 +106,10 @@ body {
 
 .clock__icon {
   margin-right: 0.3rem;
+}
+
+.time-left {
+  font-size: 14.5px;
 }
 
 .line {
@@ -119,7 +130,7 @@ body {
   height: 32px;
   width: 32px;
   display: inline-block;
-  border: 0.1px white solid;
+  border: 0.1px solid var(--info-headers-color);
   border-radius: 100%;
 }
 
@@ -129,4 +140,5 @@ body {
 
 .creator {
   color: var(--info-headers-color);
+  margin-left: 0.2rem;
 }
