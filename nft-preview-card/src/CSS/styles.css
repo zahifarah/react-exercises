@@ -5,6 +5,7 @@
   --info-headers-color: rgb(239, 244, 251);
   --info-desc-color: rgb(105, 122, 149);
   --eth-cost-color: rgb(116, 248, 243);
+  --line-detail-color: rgb(33, 47, 69);
 }
 
 html {
@@ -102,8 +103,8 @@ body {
 
 .line {
   height: 2px;
-  width: 90%;
-  background-color: rgb(150, 155, 186, 0.3);
+  width: 97%;
+  background-color: var(--line-detail-color);
   margin: auto;
   margin-bottom: 1rem;
 }
@@ -118,7 +119,8 @@ body {
   height: 32px;
   width: 32px;
   display: inline-block;
-  /* border: 1px white solid; */
+  border: 0.1px white solid;
+  border-radius: 100%;
 }
 
 .creation-of {
