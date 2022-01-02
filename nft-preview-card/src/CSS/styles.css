@@ -62,13 +62,14 @@ body {
 .artwork__headers {
   font-size: 21px;
   color: var(--info-headers-color);
-  margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 .artwork__desc {
-  margin: 1.2rem 0;
+  margin: 0.8rem 0 1.1rem 0;
   font-size: 16px;
   letter-spacing: 0.3px;
+  font-weight: 300;
 }
 
 .artwork__id {
@@ -95,7 +96,7 @@ body {
 }
 
 .cost {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .time-left__container {
@@ -110,6 +111,7 @@ body {
 
 .time-left {
   font-size: 14.5px;
+  font-weight: 300;
 }
 
 .line {
@@ -127,8 +129,8 @@ body {
 }
 
 .avatar__container {
-  height: 32px;
-  width: 32px;
+  height: 31px;
+  width: 31px;
   display: inline-block;
   border: 0.1px solid var(--info-headers-color);
   border-radius: 100%;
@@ -136,6 +138,8 @@ body {
 
 .creation-of {
   margin-left: 0.8rem;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .creator {
