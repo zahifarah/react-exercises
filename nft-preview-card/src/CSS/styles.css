@@ -1,9 +1,10 @@
 :root {
-  --main-bg-color: #1a1d31;
-  --secondary-bg-color: #2b3050;
-  --info-headers-color: white;
-  --info-desc-color: #969bba;
-  --eth-cost-color: #00aea2;
+  --main-bg-color: rgb(15, 25, 44);
+  --nft-card-bg-color: rgb(25, 39, 61);
+  --nft-card-shadow-color: rgb(15, 23, 40);
+  --info-headers-color: rgb(239, 244, 251);
+  --info-desc-color: rgb(105, 122, 149);
+  --eth-cost-color: rgb(116, 248, 243);
 }
 
 html {
@@ -34,9 +35,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-bg-color);
+  background-color: var(--nft-card-bg-color);
   border-radius: 3%;
   width: 350px;
+  box-shadow: 1px 11px 4px 20px var(--nft-card-shadow-color);
 }
 
 .artwork__container {
@@ -116,6 +118,7 @@ body {
   height: 32px;
   width: 32px;
   display: inline-block;
+  /* border: 1px white solid; */
 }
 
 .creation-of {
