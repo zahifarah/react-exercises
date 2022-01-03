@@ -1,17 +1,22 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-import "./styles.css"
+import "./CSS/minireset.min.css"
+import "./CSS/styles.css"
 
 const Panel = ({ genresList }) => {
   return (
     <>
       <div className="container">
-        <div className="panel-header"></div>
-        <div className="genres-list">
-          <button className="button">Smooth Jazz</button>
-          <button className="button">Rock</button>
-          <button className="button">Hip Hop</button>
+        <div className="panel">
+          <div className="panel-header">
+            <h2>Popular Genres</h2>
+          </div>
+          <div className="genres-list">
+            <button className="button">Smooth Jazz</button>
+            <button className="button">Rock</button>
+            <button className="button">Hip Hop</button>
+          </div>
         </div>
       </div>
     </>
