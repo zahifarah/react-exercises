@@ -102,8 +102,8 @@ const contentInfo = [
   {
     id: 6,
     ranking: 6,
-    title: "Ccoolccat: not so cool after all",
-    url: "basho.com",
+    title: "ccoolccat: not so cool after all",
+    url: "uncool.com",
     upvotes: 420,
     by: "Walt3r_Mur$h",
     submitted_at: "2021-12-01",
