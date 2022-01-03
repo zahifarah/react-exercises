@@ -24,7 +24,7 @@ const aviationExplorer = {
   contentData: [
     {
       id: 1,
-      title: "Altitudes and whatnot",
+      title: "Flying too close to the Sun!",
       subtitle: "Narcissus",
       banner: images.Banner1,
       times_pinned: 4850,
@@ -45,7 +45,7 @@ const aviationExplorer = {
     {
       id: 3,
       title: "Intro to paperplanes",
-      subtitle: "Never say Trevor",
+      subtitle: "Delicate hands at work",
       banner: images.Banner3,
       times_pinned: 209,
       thumbnail_1: images.Thumb3,
@@ -54,8 +54,8 @@ const aviationExplorer = {
     },
     {
       id: 4,
-      title: "Futuristic Hoe",
-      subtitle: "Ohhhhh yeahh!",
+      title: "The Future is Now",
+      subtitle: "But can you see it?",
       banner: images.Banner4,
       times_pinned: 1495,
       thumbnail_1: images.Thumb4,
@@ -65,7 +65,7 @@ const aviationExplorer = {
     {
       id: 5,
       title: "Space X",
-      subtitle: "Dragon Machu Pichu",
+      subtitle: "Time to go to Mars",
       banner: images.Banner5,
       times_pinned: 1495,
       thumbnail_1: images.Thumb5,
@@ -74,8 +74,8 @@ const aviationExplorer = {
     },
     {
       id: 6,
-      title: "Kerewassan",
-      subtitle: "Putin 124",
+      title: "WW2",
+      subtitle: "Never again",
       banner: images.Banner6,
       times_pinned: 75,
       thumbnail_1: images.Thumb6,
