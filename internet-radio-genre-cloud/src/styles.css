@@ -1,3 +1,20 @@
+:root {
+  --button-color-darkest: rgb(225, 225, 255);
+  --button-color-lightest: rgb(252, 252, 252);
+}
+
 html {
   background-color: rgb(205, 205, 205);
+}
+
+.button {
+  margin: 4px;
+  font-size: 18px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  outline: solid 1.2px rgb(180, 180, 180);
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.33;
+  cursor: pointer;
 }

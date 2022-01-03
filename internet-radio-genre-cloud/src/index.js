@@ -6,7 +6,7 @@ import "./styles.css"
 const Panel = ({ genresList }) => {
   return (
     <>
-      <h1>Hello World</h1>
+      <button className="button">Smooth Jazz</button>
     </>
   )
 }
