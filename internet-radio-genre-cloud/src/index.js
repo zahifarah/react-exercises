@@ -6,7 +6,14 @@ import "./styles.css"
 const Panel = ({ genresList }) => {
   return (
     <>
-      <button className="button">Smooth Jazz</button>
+      <div className="container">
+        <div className="panel-header"></div>
+        <div className="genres-list">
+          <button className="button">Smooth Jazz</button>
+          <button className="button">Rock</button>
+          <button className="button">Hip Hop</button>
+        </div>
+      </div>
     </>
   )
 }

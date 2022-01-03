@@ -3,8 +3,25 @@
   --button-color-lightest: rgb(252, 252, 252);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
 html {
   background-color: rgb(205, 205, 205);
+  height: 100%;
+}
+
+.container {
+  height: 100%;
 }
 
 .button {
