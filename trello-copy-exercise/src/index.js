@@ -51,30 +51,6 @@ const productBacklog = [
     id: 11,
     text: "finished tree html page ???????",
   },
-  {
-    id: 12,
-    text: "JavaScript",
-  },
-  {
-    id: 13,
-    text: "JavaScript Testing",
-  },
-  {
-    id: 14,
-    text: '"Course" change to tree or to cluster',
-  },
-  {
-    id: 15,
-    text: "(Low priority) - About Me page setup and styling",
-  },
-  {
-    id: 16,
-    text: "Responsive Design",
-  },
-  {
-    id: 17,
-    text: "User profile entity",
-  },
 ]
 
 const parkingLot = [

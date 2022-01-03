@@ -6,6 +6,18 @@
   --base-left-right-margin: 0.5rem;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .all-cards {
   display: flex;
   flex-direction: row;
