@@ -1,29 +1,58 @@
 :root {
-  --button-color-darkest: rgb(225, 225, 255);
-  --button-color-lightest: rgb(252, 252, 252);
+  --bg-color-lightest: rgb(252, 252, 252);
+  --bg-color-darkest: rgb(242, 242, 242);
+  --general-border-color: rgb(215, 215, 215);
 }
 
 html,
 body,
-#root {
+#root,
+.container {
   height: 100%;
 }
 
 html {
-  background-color: rgb(205, 205, 205);
-}
-
-.container {
-  height: 100%;
-  background-color: black;
+  font-family: Helvetica, sans-serif;
 }
 
 .panel {
-  background-color: gray;
+  border: 1px solid var(--general-border-color);
+  border-radius: 5px;
+  width: 90%;
+}
+
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--general-border-color);
+  background: linear-gradient(
+    var(--bg-color-lightest),
+    var(--bg-color-darkest)
+  );
+}
+
+.panel-heading h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
+.genre-list {
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.genre-list-item {
+  margin: 0.5rem 1rem;
 }
 
 .button {
-  margin: 4px;
+  white-space: nowrap;
   font-size: 18px;
   padding: 10px 16px;
   border-radius: 6px;
@@ -32,4 +61,8 @@ html {
   text-shadow: 0 1px 0 #fff;
   line-height: 1.33;
   cursor: pointer;
+  background: linear-gradient(
+    var(--bg-color-lightest),
+    var(--bg-color-darkest)
+  );
 }

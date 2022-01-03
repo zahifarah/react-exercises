@@ -2,20 +2,33 @@ import React from "react"
 import ReactDOM from "react-dom"
 
 import "./CSS/minireset.min.css"
+import "./CSS/mixins.css"
 import "./CSS/styles.css"
 
 const Panel = ({ genresList }) => {
   return (
     <>
-      <div className="container">
+      <div className="container flex-row-center">
         <div className="panel">
-          <div className="panel-header">
-            <h2>Popular Genres</h2>
+          <div className="panel-heading">
+            <h1>Popular Genres</h1>
           </div>
-          <div className="genres-list">
-            <button className="button">Smooth Jazz</button>
-            <button className="button">Rock</button>
-            <button className="button">Hip Hop</button>
+          <div className="panel-body flex-row-center">
+            <div className="genre-list">
+              <button className="genre-list-item button">Smooth Jazz</button>
+              <button className="genre-list-item button">Christmas</button>
+              <button className="genre-list-item button">Classic Rock</button>
+              <button className="genre-list-item button">Blues</button>
+              <button className="genre-list-item button">Easy Listening</button>
+              <button className="genre-list-item button">Jazz</button>
+              <button className="genre-list-item button">Classical</button>
+              <button className="genre-list-item button">Country</button>
+              <button className="genre-list-item button">80s</button>
+              <button className="genre-list-item button">Rock</button>
+              <button className="genre-list-item button">Dance</button>
+              <button className="genre-list-item button">Oldies</button>
+              <button className="genre-list-item button">House</button>
+            </div>
           </div>
         </div>
       </div>
