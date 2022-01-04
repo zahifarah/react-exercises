@@ -13,6 +13,7 @@ body,
 
 html {
   font-family: Helvetica, sans-serif;
+  background-color: gray;
 }
 
 .panel {
