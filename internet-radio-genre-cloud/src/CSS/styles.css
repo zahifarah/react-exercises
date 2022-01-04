@@ -29,11 +29,10 @@ html {
   text-align: center;
 }
 
-/* PROBLEM: works when using !important */
-/* thing is I don't want to use it */
+/* PROBLEM: works when using "!important" 
+ISSUE: I don't want "!important" */
 .panel .panel-heading .title {
   border: 3px solid blue;
-  /* background: rgb(179, 233, 252) !important;  */
   background: rgb(179, 233, 252);
   padding: 10px 15px;
   background: none;
@@ -83,7 +82,7 @@ html {
   font-size: 18px;
 }
 
-/* @media (max-width: 32.5em) {
+@media (max-width: 32.5em) {
   .button {
     color: red;
     white-space: nowrap;
@@ -137,4 +136,4 @@ html {
     border-radius: 6px;
     line-height: 1.33;
   }
-} */
+}
