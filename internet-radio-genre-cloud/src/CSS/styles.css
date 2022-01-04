@@ -6,43 +6,56 @@
 
 html,
 body,
-#root,
-.container {
+#root {
   height: 100%;
 }
 
 html {
   font-family: Helvetica, sans-serif;
-  background-color: rgb(255, 255, 255);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel {
-  border: 1px solid var(--border-color);
+  /* border: 1px solid var(--border-color); */
+  background-color: rgb(255, 233, 233);
+  border: 3px solid red;
   border-radius: 5px;
   max-width: 75%;
+  text-align: center;
 }
 
-.panel-heading {
+/* PROBLEM: works when using !important */
+/* thing is I don't want to use it */
+.panel .panel-heading .title {
+  border: 3px solid blue;
+  /* background: rgb(179, 233, 252) !important;  */
+  background: rgb(179, 233, 252);
   padding: 10px 15px;
-  border-bottom: 1px solid var(--border-color);
-  background: linear-gradient(var(--bg-lightest), var(--bg-darkest));
-}
-
-.panel-heading h1 {
+  background: none;
   font-size: 20px;
   font-weight: 500;
 }
 
 .panel-body {
-  padding: 15px;
+  border: 3px solid lime;
+  background-color: rgb(198, 255, 198);
+  margin: 15px;
   max-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .genre-list {
   max-width: 90%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -70,7 +83,7 @@ html {
   font-size: 18px;
 }
 
-@media (max-width: 32.5em) {
+/* @media (max-width: 32.5em) {
   .button {
     color: red;
     white-space: nowrap;
@@ -124,4 +137,4 @@ html {
     border-radius: 6px;
     line-height: 1.33;
   }
-}
+} */
