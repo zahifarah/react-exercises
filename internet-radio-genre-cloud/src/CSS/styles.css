@@ -18,7 +18,7 @@ html {
 .panel {
   border: 1px solid var(--border-color);
   border-radius: 5px;
-  width: 90%;
+  max-width: 75%;
 }
 
 .panel-heading {
@@ -45,18 +45,71 @@ html {
 }
 
 .genre-list-item {
-  margin: 0.5rem 1rem;
-}
-
-.button {
   white-space: nowrap;
   font-size: 18px;
   padding: 10px 16px;
+  margin: 0.5rem 1rem;
   border-radius: 6px;
+  line-height: 1.33;
   border: none;
   outline: solid 1.2px rgb(180, 180, 180);
   text-shadow: 0 1px 0 #fff;
-  line-height: 1.33;
   cursor: pointer;
   background: linear-gradient(var(--bg-lightest), var(--bg-darkest));
+}
+
+@media (max-width: 32.5em) {
+  .button {
+    color: red;
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 10px 10px;
+    margin: 0.5rem 0.5rem;
+    border-radius: 6px;
+    line-height: 1.33;
+  }
+}
+
+@media (max-width: 26.875em) {
+  .button {
+    color: blue;
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 10px 7px;
+    margin: 0.3rem 0.3rem;
+    border-radius: 6px;
+    line-height: 1.33;
+  }
+}
+
+@media (max-width: 390px) {
+  .button {
+    color: orange;
+    white-space: nowrap;
+    font-size: 17.5px;
+    padding: 10px 7px;
+    margin: 0.3rem 0.3rem;
+    border-radius: 6px;
+    line-height: 1.33;
+  }
+}
+
+@media (max-width: 24.375em) {
+  .genre-list {
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    color: lime;
+    white-space: nowrap;
+    font-size: 17.5px;
+    padding: 10px 7px;
+    margin: 0.3rem 0.3rem;
+    border-radius: 6px;
+    line-height: 1.33;
+  }
 }
