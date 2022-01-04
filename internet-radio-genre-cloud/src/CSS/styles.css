@@ -13,7 +13,7 @@ body,
 
 html {
   font-family: Helvetica, sans-serif;
-  background-color: gray;
+  background-color: rgb(255, 255, 255);
 }
 
 .panel {
@@ -49,7 +49,7 @@ html {
 .genre-list-item {
   white-space: nowrap;
   font-size: 18px;
-  padding: 10px 16px;
+  padding: 8px 14px;
   margin: 0.5rem 1rem;
   border-radius: 6px;
   line-height: 1.33;
@@ -58,6 +58,16 @@ html {
   text-shadow: 0 1px 0 #fff;
   cursor: pointer;
   background: linear-gradient(var(--bg-lightest), var(--bg-darkest));
+}
+
+.btn-xs {
+  font-size: 14px;
+}
+.btn-lg {
+  font-size: 16px;
+}
+.btn-md {
+  font-size: 18px;
 }
 
 @media (max-width: 32.5em) {

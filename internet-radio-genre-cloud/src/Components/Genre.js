@@ -1,9 +1,10 @@
 import React from "react"
 
-const Genre = ({ genre }) => {
+const Genre = ({ genre, size }) => {
+  console.log(size)
   return (
     <>
-      <button className="genre-list-item">{genre}</button>
+      <button className={`genre-list-item ${size}`}>{genre}</button>
     </>
   )
 }
