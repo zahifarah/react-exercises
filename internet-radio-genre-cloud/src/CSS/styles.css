@@ -82,7 +82,7 @@ ISSUE: I don't want "!important" */
   font-size: 18px;
 }
 
-@media (max-width: 32.5em) {
+/* @media (max-width: 32.5em) {
   .button {
     color: red;
     white-space: nowrap;
@@ -136,4 +136,4 @@ ISSUE: I don't want "!important" */
     border-radius: 6px;
     line-height: 1.33;
   }
-}
+} */
