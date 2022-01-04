@@ -1,7 +1,7 @@
 :root {
-  --bg-color-lightest: rgb(252, 252, 252);
-  --bg-color-darkest: rgb(242, 242, 242);
-  --general-border-color: rgb(215, 215, 215);
+  --bg-lightest: #fcfcfc;
+  --bg-darkest: #f2f2f2;
+  --border-color: #d7d7d7;
 }
 
 html,
@@ -16,18 +16,15 @@ html {
 }
 
 .panel {
-  border: 1px solid var(--general-border-color);
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   width: 90%;
 }
 
 .panel-heading {
   padding: 10px 15px;
-  border-bottom: 1px solid var(--general-border-color);
-  background: linear-gradient(
-    var(--bg-color-lightest),
-    var(--bg-color-darkest)
-  );
+  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(var(--bg-lightest), var(--bg-darkest));
 }
 
 .panel-heading h1 {
@@ -61,8 +58,5 @@ html {
   text-shadow: 0 1px 0 #fff;
   line-height: 1.33;
   cursor: pointer;
-  background: linear-gradient(
-    var(--bg-color-lightest),
-    var(--bg-color-darkest)
-  );
+  background: linear-gradient(var(--bg-lightest), var(--bg-darkest));
 }
