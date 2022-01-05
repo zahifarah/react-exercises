@@ -6,7 +6,7 @@ const PopularGenres = ({ genres }) => {
   return (
     <>
       <div className="panel">
-        <div className="panel-heading">
+        <div className="panel-header">
           <h1 className="title">Popular Genres</h1>
         </div>
         <div className="panel-body">
