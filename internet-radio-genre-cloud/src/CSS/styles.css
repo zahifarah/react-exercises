@@ -1,0 +1,139 @@
+:root {
+  --bg-lightest: #fcfcfc;
+  --bg-darkest: #f2f2f2;
+  --bg-pastel-red: #ffe9e9;
+  --bg-pastel-blue: #e9feff;
+  --border-color: #d7d7d7;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  font-family: Helvetica, sans-serif;
+  background-color: var(--bg-pastel-red);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-pastel-blue);
+  border-radius: 5px;
+  max-width: 75%;
+  text-align: center;
+  border-radius: 30%;
+  border-top: none;
+}
+
+.panel-header {
+  border: 1px solid var(--border-color);
+  background: linear-gradient(var(--bg-lightest), var(--bg-darkest));
+  padding: 15px 15px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 20%;
+}
+
+.panel-body {
+  margin: 15px;
+  max-height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.genre-list {
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.genre-list-item {
+  white-space: nowrap;
+  font-size: 18px;
+  padding: 8px 14px;
+  margin: 0.5rem 1rem;
+  border-radius: 6px;
+  line-height: 1.33;
+  border: none;
+  outline: solid 1.2px rgb(180, 180, 180);
+  text-shadow: 0 1px 0 #fff;
+  cursor: pointer;
+  background: linear-gradient(var(--bg-lightest), var(--bg-darkest));
+}
+
+.btn-xs {
+  font-size: 14px;
+}
+.btn-lg {
+  font-size: 16px;
+}
+.btn-md {
+  font-size: 18px;
+}
+
+/* @media (max-width: 32.5em) {
+  .button {
+    color: red;
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 10px 10px;
+    margin: 0.5rem 0.5rem;
+    border-radius: 6px;
+    line-height: 1.33;
+  }
+}
+
+@media (max-width: 26.875em) {
+  .button {
+    color: blue;
+    white-space: nowrap;
+    font-size: 18px;
+    padding: 10px 7px;
+    margin: 0.3rem 0.3rem;
+    border-radius: 6px;
+    line-height: 1.33;
+  }
+}
+
+@media (max-width: 390px) {
+  .button {
+    color: orange;
+    white-space: nowrap;
+    font-size: 17.5px;
+    padding: 10px 7px;
+    margin: 0.3rem 0.3rem;
+    border-radius: 6px;
+    line-height: 1.33;
+  }
+}
+
+@media (max-width: 24.375em) {
+  .genre-list {
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    color: lime;
+    white-space: nowrap;
+    font-size: 17.5px;
+    padding: 10px 7px;
+    margin: 0.3rem 0.3rem;
+    border-radius: 6px;
+    line-height: 1.33;
+  }
+} */
