@@ -19,3 +19,8 @@
 
 - Implement an NFT preview card component
 - <img src="./screenshots/ss_nft-preview-card.png" height="500">
+
+## 5. internet-radio-exercise
+
+- Come up with a nice way of sizing the buttons so they get progressively larger.
+- <img src="./screenshots/ss_internet-radio-genre-cloud.png" height="600">
