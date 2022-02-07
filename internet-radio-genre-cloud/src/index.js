@@ -9,6 +9,6 @@ import "./CSS/minireset.min.css"
 import "./CSS/styles.css"
 
 ReactDOM.render(
-  <PopularGenres genres={arrayOfGenres} />,
+  <PopularGenres arrayOfGenres={arrayOfGenres} />,
   document.getElementById("root")
 )

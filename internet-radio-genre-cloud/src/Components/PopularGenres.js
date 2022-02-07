@@ -2,7 +2,7 @@ import React from "react"
 
 import Genres from "./Genres"
 
-const PopularGenres = ({ genres }) => {
+const PopularGenres = ({ arrayOfGenres }) => {
   return (
     <>
       <div className="panel">
@@ -11,7 +11,7 @@ const PopularGenres = ({ genres }) => {
         </div>
         <div className="panel-body">
           <div className="genre-list">
-            <Genres arrayOfGenres={genres} />
+            <Genres arrayOfGenres={arrayOfGenres} />
           </div>
         </div>
       </div>
