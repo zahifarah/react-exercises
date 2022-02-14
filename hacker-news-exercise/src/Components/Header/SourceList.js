@@ -7,10 +7,7 @@ const SourceList = ({ sourceList }) => {
     <>
       <ul className="source-list">
         {sourceList.map((item) => (
-          <>
-            <SourceListItem key={item.id} item={item} />
-            <span>|</span>
-          </>
+          <SourceListItem key={item.id} item={item.text} />
         ))}
       </ul>
     </>
