@@ -1,0 +1,102 @@
+/* ------------- */
+/* Reset         */
+/* ------------- */
+
+/* box sizing */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make forms easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ------------------------ */
+/* Container 100% Height    */
+/* ------------------------ */
+html,
+body,
+#root,
+.container {
+  height: 100%;
+}
+
+/* ------------------------ */
+/* Rules                    */
+/* ------------------------ */
+.container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  border: 1px black solid;
+  height: 80vh;
+  position: relative;
+  width: 60%;
+}
+
+.title {
+  margin: 15px;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.size {
+  display: flex;
+  margin-left: 15px;
+  justify-content: flex-start;
+}
+
+input[type="radio"] {
+  color: red;
+  margin-left: 10px;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+
+#first-radio-btn {
+  margin-left: 0px;
+}
+
+#btn-submit {
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+  left: 50%;
+  bottom: 15px;
+}
