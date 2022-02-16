@@ -4,78 +4,92 @@ import ReactDOM from "react-dom"
 import "./index.css"
 
 class PizzaOrder extends Component {
-  constructor() {
-    super()
-    this.state = {
-      // name: "React",
-    }
-
-    this.onValueChange = this.onValueChange.bind(this)
-    this.formSubmit = this.formSubmit.bind(this)
+  state = {
+    size: "medium",
+    glutenFree: false,
+    topping: "",
+    instructions: "",
   }
 
-  onValueChange(event) {
-    console.log(
-      `checked: ${event.target.checked}, value: ${event.target.value}`
-    )
+  // methods
+  setSize = (event) => {
     this.setState({
-      selectedOption: event.target.value,
+      size: event.target.value,
     })
   }
 
-  formSubmit(event) {
-    event.preventDefault()
-    console.log(this.state.selectedOption)
-  }
+  //  setTopping
+  //  setGluten
+  //  setInstructions
 
   render() {
     return (
-      <div className="container">
-        <form onSubmit={this.formSubmit}>
-          <div className="title">
-            <h2>Order Your Pizza</h2>
-          </div>
-          <div className="section-title">Size</div>
-          <div className="size">
-            <div className="radio">
-              <label>
-                <input
-                  type="radio"
-                  value="small"
-                  checked={this.state.selectedOption === "small"}
-                  onChange={this.onValueChange}
-                />
-                <span className="radio-label">Small</span>
-              </label>
-            </div>
-            <div className="radio">
-              <label>
-                <input
-                  type="radio"
-                  value="medium"
-                  checked={this.state.selectedOption === "medium"}
-                  onChange={this.onValueChange}
-                />
-                <span className="radio-label">Medium</span>
-              </label>
-            </div>
-            <div className="radio">
-              <label>
-                <input
-                  type="radio"
-                  value="large"
-                  checked={this.state.selectedOption === "large"}
-                  onChange={this.onValueChange}
-                />
-                <span className="radio-label">Large</span>
-              </label>
-            </div>
-          </div>
-          <button id="btn-submit" type="submit">
-            Send Order
-          </button>
+      <>
+        <form>
+          <h2>Order Your Pizza</h2>
+
+          <section>
+            <h3>Size</h3>
+
+            <label>
+              <input
+                type="radio"
+                value="small"
+                checked={this.state.size === "small"}
+                onChange={this.setSize}
+              />
+              Small
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="medium"
+                checked={this.state.size === "medium"}
+                onChange={this.setSize}
+              />
+              Medium
+            </label>
+            <label>
+              <input
+                type="radio"
+                value="large"
+                checked={this.state.size === "large"}
+                onChange={this.setSize}
+              />
+              Large
+            </label>
+          </section>
+
+          <section>
+            <h3>Topping</h3>
+            <select>
+              <option value="">- Pick a topping -</option>
+              <option value="pepperoni">Pepperoni</option>
+              <option value="peppers+onions">Peppers and onions</option>
+              <option value="pineapple">Pineapple</option>
+            </select>
+          </section>
+
+          <br />
+
+          <section>
+            <label>
+              <input type="checkbox" />
+              Gluten free
+            </label>
+          </section>
+
+          <br />
+
+          <section>
+            <textarea name="" cols="30" rows="5"></textarea>
+          </section>
+
+          <br />
+
+          <button type="submit">Order</button>
         </form>
-      </div>
+      </>
     )
   }
 }
