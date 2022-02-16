@@ -11,21 +11,50 @@ class PizzaOrder extends Component {
     instructions: "",
   }
 
-  // methods
   setSize = (event) => {
     this.setState({
       size: event.target.value,
     })
   }
 
-  //  setTopping
-  //  setGluten
-  //  setInstructions
+  setTopping = (event) => {
+    this.setState({
+      topping: event.target.value,
+    })
+  }
+
+  setGluten = (event) => {
+    console.log(
+      `checked: ${event.target.checked}, state: ${this.state.glutenFree}`
+    )
+    this.setState({
+      glutenFree: event.target.checked,
+    })
+  }
+
+  setInstructions = (event) => {
+    this.setState({
+      instructions: event.target.value,
+    })
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault()
+
+    alert(
+      `Your order:
+      - Size: ${this.state.size}
+      - Topping: ${this.state.topping || "none"}
+      - Gluten Free? ${this.state.glutenFree ? "yes" : "no"}
+      - Instructions: ${this.state.instructions}
+      `
+    )
+  }
 
   render() {
     return (
       <>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <h2>Order Your Pizza</h2>
 
           <section>
@@ -62,7 +91,7 @@ class PizzaOrder extends Component {
 
           <section>
             <h3>Topping</h3>
-            <select>
+            <select onChange={this.setTopping} value={this.state.topping}>
               <option value="">- Pick a topping -</option>
               <option value="pepperoni">Pepperoni</option>
               <option value="peppers+onions">Peppers and onions</option>
@@ -74,7 +103,11 @@ class PizzaOrder extends Component {
 
           <section>
             <label>
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                onChange={this.setGluten}
+                checked={this.state.glutenFree}
+              />
               Gluten free
             </label>
           </section>
@@ -82,7 +115,11 @@ class PizzaOrder extends Component {
           <br />
 
           <section>
-            <textarea name="" cols="30" rows="5"></textarea>
+            <textarea
+              cols="30"
+              rows="5"
+              value={this.state.instructions}
+              onChange={this.setInstructions}></textarea>
           </section>
 
           <br />
