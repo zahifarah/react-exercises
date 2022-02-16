@@ -15,8 +15,9 @@ class PizzaOrder extends Component {
   }
 
   onValueChange(event) {
-    // console.log('"checked": ', event.target.checked)
-    // console.log('"target": ', event.target.value)
+    console.log(
+      `checked: ${event.target.checked}, value: ${event.target.value}`
+    )
     this.setState({
       selectedOption: event.target.value,
     })
@@ -39,13 +40,12 @@ class PizzaOrder extends Component {
             <div className="radio">
               <label>
                 <input
-                  id="first"
                   type="radio"
                   value="small"
                   checked={this.state.selectedOption === "small"}
                   onChange={this.onValueChange}
                 />
-                Small
+                <span className="radio-label">Small</span>
               </label>
             </div>
             <div className="radio">
@@ -56,7 +56,7 @@ class PizzaOrder extends Component {
                   checked={this.state.selectedOption === "medium"}
                   onChange={this.onValueChange}
                 />
-                Medium
+                <span className="radio-label">Medium</span>
               </label>
             </div>
             <div className="radio">
@@ -67,7 +67,7 @@ class PizzaOrder extends Component {
                   checked={this.state.selectedOption === "large"}
                   onChange={this.onValueChange}
                 />
-                Large
+                <span className="radio-label">Large</span>
               </label>
             </div>
           </div>

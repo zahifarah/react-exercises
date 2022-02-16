@@ -61,9 +61,9 @@ body,
 
 form {
   border: 1px black solid;
-  height: 80vh;
+  height: 400px;
   position: relative;
-  width: 60%;
+  width: auto;
 }
 
 .title {
@@ -83,14 +83,24 @@ form {
 }
 
 input[type="radio"] {
-  color: red;
   margin-left: 10px;
-  margin-right: 2px;
+  margin-right: 3px;
   vertical-align: middle;
+  padding: 0;
 }
 
-#first-radio-btn {
+.radio:first-child input[type="radio"] {
+  margin-right: 3px;
   margin-left: 0px;
+  border: 1px blue solid;
+}
+
+.radio:nth-child(3) {
+  margin-right: 3px;
+}
+
+.radio-label {
+  margin-right: 10px;
 }
 
 #btn-submit {
