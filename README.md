@@ -28,4 +28,4 @@
 ## 6. pizza-order-exercise
 
 - Create an app that involves radio buttons, a checkbox, a select dropdown, and a textarea.
-- <img src="./screenshots/ss_pizza-order.png" height="500">
+- <img src="./screenshots/ss_pizza-order.png" height="300">
