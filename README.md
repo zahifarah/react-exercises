@@ -24,3 +24,8 @@
 
 - Come up with a nice way of sizing the buttons so they get progressively larger.
 - <img src="./screenshots/ss_internet-radio-genre-cloud.png" width="600">
+
+## 6. pizza-order-exercise
+
+- Create an app that involves radio buttons, a checkbox, a select dropdown, and a textarea.
+- <img src="./screenshots/ss_pizza-order.png" height="500">
