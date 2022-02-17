@@ -55,9 +55,9 @@ class PizzaOrder extends Component {
     return (
       <>
         <form onSubmit={this.handleSubmit}>
-          <h2>Order Your Pizza</h2>
+          <h2 className="title">Order Your Pizza</h2>
 
-          <section>
+          <section className="section-size">
             <h3>Size</h3>
 
             <label>
@@ -67,7 +67,7 @@ class PizzaOrder extends Component {
                 checked={this.state.size === "small"}
                 onChange={this.setSize}
               />
-              Small
+              <span>Small</span>
             </label>
             <label>
               <input
@@ -76,7 +76,7 @@ class PizzaOrder extends Component {
                 checked={this.state.size === "medium"}
                 onChange={this.setSize}
               />
-              Medium
+              <span>Medium</span>
             </label>
             <label>
               <input
@@ -85,11 +85,11 @@ class PizzaOrder extends Component {
                 checked={this.state.size === "large"}
                 onChange={this.setSize}
               />
-              Large
+              <span>Large</span>
             </label>
           </section>
 
-          <section>
+          <section className="section-topping">
             <h3>Topping</h3>
             <select onChange={this.setTopping} value={this.state.topping}>
               <option value="">- Pick a topping -</option>
@@ -101,20 +101,21 @@ class PizzaOrder extends Component {
 
           <br />
 
-          <section>
+          <section className="section-gluten">
             <label>
               <input
                 type="checkbox"
                 onChange={this.setGluten}
                 checked={this.state.glutenFree}
               />
-              Gluten free
+              <span className="gluten">Gluten free</span>
             </label>
           </section>
 
           <br />
 
-          <section>
+          <section className="section-instructions">
+            <h3>Instructions</h3>
             <textarea
               cols="30"
               rows="5"
