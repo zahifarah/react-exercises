@@ -28,9 +28,9 @@
 ## 6. pizza-order-exercise
 
 - Create an app (form) that involves radio buttons, a checkbox, a select dropdown, and a textarea.
-- <img src="./screenshots/ss_pizza-order.png" height="300">
+- <img src="./screenshots/ss_pizza-order.png" height="400">
 
 ## 7. calculator (Hook: useReducer)
 
 - Create a calculator app without using any math library.
-- <img src="./screenshots/ss_calculator.png" height="300">
+- <img src="./screenshots/ss_calculator.png" height="400">
