@@ -33,4 +33,4 @@
 ## 7. calculator (Hook: useReducer)
 
 - Create a calculator app without using any math library.
-- <img src="./screenshots/ss_pizza-order.png" height="300">
+- <img src="./screenshots/ss_calculator.png" height="300">
