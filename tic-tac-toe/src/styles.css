@@ -10,17 +10,27 @@ html {
 
 body {
   margin: 0;
-  font-size: 2rem;
   font: 14px "Century Gothic", Futura, sans-serif;
   height: 100%;
 }
 
 #root {
   height: 100%;
-  background-color: rgb(182, 182, 182);
+  background-color: #999;
 }
 
-.container {
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 40px;
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.game {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,13 +41,14 @@ body {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  height: 75px;
+  width: 75px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
-  text-align: center;
-  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
