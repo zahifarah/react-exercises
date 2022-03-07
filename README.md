@@ -15,7 +15,7 @@
 - Implement a list of image cards. For more practice, implement the header too.
 - <img src="./screenshots/ss_pinterest-exercise.png" width="600">
 
-## 4. nft-preview-card (bonus challenge)
+## 4. nft-preview-card
 
 - Implement an NFT preview card component
 - <img src="./screenshots/ss_nft-preview-card.png" height="500">
@@ -28,4 +28,9 @@
 ## 6. pizza-order-exercise
 
 - Create an app (form) that involves radio buttons, a checkbox, a select dropdown, and a textarea.
+- <img src="./screenshots/ss_pizza-order.png" height="300">
+
+## 7. calculator (Hook: useReducer)
+
+- Create a calculator app without using any math library.
 - <img src="./screenshots/ss_pizza-order.png" height="300">
