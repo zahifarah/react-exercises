@@ -30,15 +30,17 @@ class Board extends React.Component {
   }
 
   handleClick(i) {
-    const squares = this.state.squares.slice()
-    console.log(calculateWinner(squares))
+    const squares = this.state.squares.slice() // immutability: replace data with new copy
+
     // Why is the second operand necessary?
     if (calculateWinner(squares) || squares[i]) {
       return
     }
-    squares[i] = this.state.xIsNext ? "X" : "O"
+
+    squares[i] = this.state.xIsNext ? "X" : "O" // mutate the new copy at index "i" and assign new value
+
     this.setState({
-      squares: squares,
+      squares: squares, // replace squares with new squares array
       xIsNext: !this.state.xIsNext,
     })
   }
