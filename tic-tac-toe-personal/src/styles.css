@@ -1,0 +1,53 @@
+:root {
+  --cell-size: 150px;
+  --color-gray: #b0b0b0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-gray);
+}
+
+.board {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(3, var(--cell-size));
+}
+
+.square {
+  height: var(--cell-size);
+  width: var(--cell-size);
+  border: 1px solid black;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.square:nth-child(1),
+.square:nth-child(2),
+.square:nth-child(3) {
+  border-top: none;
+}
+
+.square:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.square:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.square:last-child,
+.square:nth-last-child(2),
+.square:nth-last-child(3) {
+  border-bottom: none;
+}
