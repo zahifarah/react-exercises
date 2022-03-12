@@ -9,7 +9,6 @@ const Game = () => {
       <div className="container">
         <div className="status">Turn: X</div>
         <div className="board-container">
-          <div className="border-div"></div>
           <div className="board">
             <button className="square">1</button>
             <button className="square">2</button>

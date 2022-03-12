@@ -1,13 +1,10 @@
 :root {
   --cell-size: 125px;
-  --bg-gray: #b0b0b0;
-  --bg-blue: #040926;
-  --light-blue: #effcfc;
-  --dark-blue: #5ee1fa;
-  --light-purple: #ffe4f3;
-  --dark-purple: #ef44b7;
-  --light-yellow: #fef7e0;
-  --dark-yellow: #f0c449;
+  --color-bg-gray: #b0b0b0;
+  --color-bg-blue: #040926;
+  --color-main-blue: #5ee1fa;
+  --color-main-purple: #ef44b7;
+  --color-main-yellow: #f0c449;
 }
 
 *,
@@ -18,7 +15,7 @@
 
 body {
   margin: 0;
-  background-color: var(--bg-gray);
+  background-color: var(--color-bg-gray);
 }
 
 .container {
@@ -28,20 +25,19 @@ body {
   height: 100vh;
   width: 100vw;
   border: 1px black solid;
-  background-color: var(--bg-blue);
+  background-color: var(--color-bg-blue);
 }
 
 .status {
   background-color: transparent;
   font-size: 2rem;
   text-align: center;
-  color: var(--dark-purple);
-  border-bottom: 1px solid var(--dark-purple);
+  color: var(--color-main-purple);
+  border-bottom: 1px solid var(--color-main-purple);
   padding-bottom: 20px;
 }
 
 .board-container {
-  position: relative;
   height: 450px;
   width: 500px;
   display: flex;
@@ -50,30 +46,21 @@ body {
 }
 
 .board {
-  position: absolute;
   display: grid;
+  overflow: hidden;
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(3, var(--cell-size));
   margin-top: 30px;
 }
 
-.border-div {
-  position: absolute;
-  top: 25px;
-  height: 420px;
-  width: 400px;
-  background-color: transparent;
-  border: 2px solid white;
-}
-
 .square {
   height: var(--cell-size);
   width: var(--cell-size);
-  border: 2px solid var(--dark-yellow);
-  box-shadow: 0px 0px 10px var(--dark-yellow);
+  border: 2px solid var(--color-main-yellow);
+  box-shadow: 0px 0px 10px var(--color-main-yellow);
   font-size: 2rem;
-  color: var(--dark-blue);
+  color: var(--color-main-blue);
   cursor: pointer;
   background-color: transparent;
 }
