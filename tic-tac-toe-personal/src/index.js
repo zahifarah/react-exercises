@@ -3,14 +3,12 @@ import ReactDOM from "react-dom"
 
 import "./styles.css"
 
-class Square extends React.Component {
-  render() {
-    return (
-      <button className="square" onClick={() => this.props.onClick()}>
-        {this.props.value}
-      </button>
-    )
-  }
+const Square = (props) => {
+  return (
+    <button className="square" onClick={() => props.onClick()}>
+      {props.value}
+    </button>
+  )
 }
 
 class Board extends React.Component {
@@ -62,7 +60,7 @@ class Game extends Component {
     return (
       <>
         <div className="container">
-          <div className="status">Next player: X</div>
+          <div className="status">Next Player: X</div>
           <div className="board-container">
             <Board />
           </div>
