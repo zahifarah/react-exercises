@@ -41,28 +41,63 @@ class Game extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      squares: Array(9).fill(null),
+      history: [
+        {
+          squares: Array(9).fill(null),
+        },
+      ],
+      stepNumber: 0,
       xIsNext: true,
     }
   }
 
   handleClick = (i, e) => {
-    const squares = this.state.squares.slice()
+    const history = this.state.history.slice(0, this.state.stepNumber + 1)
+    const current = history[history.length - 1]
+    const squares = current.squares.slice()
 
     if (calculateWinner(squares) || squares[i]) {
       return
     }
 
     e.target.classList.add(this.state.xIsNext ? "x" : "circle")
+
     squares[i] = this.state.xIsNext ? "X" : "O"
+
     this.setState({
-      squares: squares,
+      // with or without brackets?
+      history: history.concat({
+        squares: squares,
+      }),
+      stepNumber: history.length,
       xIsNext: !this.state.xIsNext,
     })
   }
 
+  jumpTo = (step) => {
+    this.setState({
+      stepNumber: step,
+      xIsNext: step % 2 === 0,
+    })
+  }
+
   render() {
-    const winner = calculateWinner(this.state.squares)
+    const history = this.state.history
+    const current = history[this.state.stepNumber]
+    const winner = calculateWinner(current.squares)
+
+    const historical = this.state.history.map((ele) => ele)
+    console.log(historical)
+
+    const moves = history.map((step, move) => {
+      const desc = move ? "Go to move # " + move : "Go to game start"
+      return (
+        <li key={move}>
+          <button onClick={() => this.jumpTo(move)}>{desc}</button>
+        </li>
+      )
+    })
+
     let status = winner
       ? `Winner: ${winner}`
       : ` Next player: ${this.state.xIsNext ? "X" : "O"}`
@@ -73,10 +108,11 @@ class Game extends Component {
           <div className="status">{status}</div>
           <div className="board-container">
             <Board
-              squares={this.state.squares}
+              squares={current.squares}
               onClick={(i, e) => this.handleClick(i, e)}
             />
           </div>
+          <ol>{moves}</ol>
         </div>
       </>
     )
