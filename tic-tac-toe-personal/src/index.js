@@ -3,7 +3,9 @@ import ReactDOM from "react-dom"
 
 import "./styles.css"
 
+// do you need "props" argument here?
 const Square = (props) => {
+  console.log(props.onClick)
   return (
     <button className={`square`} onClick={(e) => props.onClick(e)}>
       {props.value}
@@ -12,30 +14,11 @@ const Square = (props) => {
 }
 
 class Board extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      squares: Array(9).fill(null),
-      xIsNext: true,
-    }
-  }
-
-  handleClick = (i, e) => {
-    e.target.classList.add(this.state.xIsNext ? "x" : "circle")
-    const squares = this.state.squares.slice()
-    squares[i] = this.state.xIsNext ? "X" : "O"
-    this.setState({
-      squares: squares,
-      xIsNext: !this.state.xIsNext,
-    })
-  }
-
   renderSquare(i) {
     return (
       <Square
-        value={this.state.squares[i]}
-        onClick={(e) => this.handleClick(i, e)}
-        xIsNext={this.state.xIsNext}
+        value={this.props.squares[i]}
+        onClick={(e) => this.props.onClick(i, e)}
       />
     )
   }
@@ -58,13 +41,34 @@ class Board extends React.Component {
 }
 
 class Game extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      squares: Array(9).fill(null),
+      xIsNext: true,
+    }
+  }
+
+  handleClick = (i, e) => {
+    e.target.classList.add(this.state.xIsNext ? "x" : "circle")
+    const squares = this.state.squares.slice()
+    squares[i] = this.state.xIsNext ? "X" : "O"
+    this.setState({
+      squares: squares,
+      xIsNext: !this.state.xIsNext,
+    })
+  }
+
   render() {
     return (
       <>
         <div className="container">
           <div className="status">Next Player: X</div>
           <div className="board-container">
-            <Board />
+            <Board
+              squares={this.state.squares}
+              onClick={(i, e) => this.handleClick(i, e)}
+            />
           </div>
         </div>
       </>
