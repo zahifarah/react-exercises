@@ -47,8 +47,13 @@ class Game extends Component {
   }
 
   handleClick = (i, e) => {
-    e.target.classList.add(this.state.xIsNext ? "x" : "circle")
     const squares = this.state.squares.slice()
+
+    if (calculateWinner(squares) || squares[i]) {
+      return
+    }
+
+    e.target.classList.add(this.state.xIsNext ? "x" : "circle")
     squares[i] = this.state.xIsNext ? "X" : "O"
     this.setState({
       squares: squares,
@@ -58,8 +63,9 @@ class Game extends Component {
 
   render() {
     const winner = calculateWinner(this.state.squares)
-    console.log(winner)
-    const status = "Next player: " + (this.state.xIsNext ? "X" : "O")
+    let status = winner
+      ? `Winner: ${winner}`
+      : ` Next player: ${this.state.xIsNext ? "X" : "O"}`
 
     return (
       <>
