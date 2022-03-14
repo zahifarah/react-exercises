@@ -86,15 +86,14 @@ class Game extends Component {
     const current = history[this.state.stepNumber]
     const winner = calculateWinner(current.squares)
 
-    const historical = this.state.history.map((ele) => ele)
-    console.log(historical)
-
     const moves = history.map((step, move) => {
       const desc = move ? "Go to move # " + move : "Go to game start"
       return (
-        <li key={move}>
-          <button onClick={() => this.jumpTo(move)}>{desc}</button>
-        </li>
+        <span key={move} className="move">
+          <button className="move-btn" onClick={() => this.jumpTo(move)}>
+            {desc}
+          </button>
+        </span>
       )
     })
 
@@ -112,7 +111,7 @@ class Game extends Component {
               onClick={(i, e) => this.handleClick(i, e)}
             />
           </div>
-          <ol>{moves}</ol>
+          <div className="moves">{moves}</div>
         </div>
       </>
     )

@@ -6,6 +6,7 @@
   --color-main-blue: #39deff;
   --color-main-purple: #ff94db;
   --color-main-yellow: #f0c449;
+  --color-main-red: #a71d31;
 }
 
 *,
@@ -30,12 +31,19 @@ body {
 }
 
 .status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   font-size: 2rem;
   text-align: center;
   color: var(--color-main-white);
   border-bottom: 2px solid var(--color-main-white);
   padding-bottom: 20px;
+
+  text-shadow: 0 0 0px var(--color-main-white), 0 0 10px var(--color-main-white),
+    0 0 0px var(--color-main-white), 0 0 0px var(--color-main-white),
+    0 0 10px var(--color-main-white);
 }
 
 .board-container {
@@ -64,6 +72,39 @@ body {
   color: var(--color-main-blue);
   cursor: pointer;
   background-color: transparent;
+}
+
+.moves {
+  margin-top: 30px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px white solid;
+  padding: 15px;
+  color: #a71d31;
+  border: 1px solid #a71d31;
+  box-shadow: 0 0 5px #a71d31, 0 0 5px inset;
+}
+
+.move-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-inline: 15px;
+  padding: 20px;
+  max-width: auto;
+  height: 40px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1em;
+  color: #8ce436;
+  border: 1px solid #8ce436;
+  box-shadow: 0 0 5px #8ce436, 0 0 5px inset;
 }
 
 /* ------- */
@@ -95,10 +136,16 @@ body {
 /* ------- */
 .square.x {
   color: var(--color-main-blue);
+  text-shadow: 0 0 0px var(--color-main-blue), 0 0 0px var(--color-main-blue),
+    0 0 10px var(--color-main-blue), 0 0 40px var(--color-main-blue),
+    0 0 0px var(--color-main-blue);
 }
 
 .square.circle {
   color: var(--color-main-purple);
+  text-shadow: 0 0 0px var(--color-main-purple),
+    0 0 0px var(--color-main-purple), 0 0 10px var(--color-main-purple),
+    0 0 40px var(--color-main-purple), 0 0 0px var(--color-main-purple);
 }
 
 button:hover {
