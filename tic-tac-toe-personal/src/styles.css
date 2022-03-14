@@ -89,3 +89,14 @@ body {
   border-bottom: none;
   border-top: none;
 }
+
+/* ------- */
+/* Classes */
+/* ------- */
+.square.x {
+  color: var(--color-main-blue);
+}
+
+.square.circle {
+  color: var(--color-main-purple);
+}

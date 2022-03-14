@@ -5,7 +5,9 @@ import "./styles.css"
 
 const Square = (props) => {
   return (
-    <button className="square" onClick={() => props.onClick()}>
+    <button
+      className={`square ${props.xIsNext ? "circle" : "x"}`}
+      onClick={(e) => props.onClick(e)}>
       {props.value}
     </button>
   )
@@ -20,7 +22,8 @@ class Board extends React.Component {
     }
   }
 
-  handleClick(i) {
+  handleClick = (i, e) => {
+    console.log(e.target)
     const squares = this.state.squares.slice()
     squares[i] = this.state.xIsNext ? "X" : "O"
     this.setState({
@@ -33,7 +36,8 @@ class Board extends React.Component {
     return (
       <Square
         value={this.state.squares[i]}
-        onClick={() => this.handleClick(i)}
+        onClick={(e) => this.handleClick(i, e)}
+        xIsNext={this.state.xIsNext}
       />
     )
   }
