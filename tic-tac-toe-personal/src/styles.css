@@ -100,3 +100,7 @@ body {
 .square.circle {
   color: var(--color-main-purple);
 }
+
+button:hover {
+  cursor: pointer;
+}
