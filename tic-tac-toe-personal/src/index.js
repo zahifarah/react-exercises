@@ -87,7 +87,7 @@ class Game extends Component {
     const winner = calculateWinner(current.squares)
 
     const moves = history.map((step, move) => {
-      const desc = move ? "Go to move # " + move : "Go to game start"
+      const desc = move ? "Go to move # " + move : "Go to start"
       return (
         <span key={move} className="move">
           <button className="move-btn" onClick={() => this.jumpTo(move)}>

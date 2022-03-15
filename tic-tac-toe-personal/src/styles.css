@@ -1,12 +1,20 @@
 :root {
   --cell-size: 125px;
-  --color-bg-gray: #b0b0b0;
+  --neon-red: #ff5161;
+  --neon-red-glow: #d30302;
+  --neon-pink: #ff53cd;
+  --neon-pink-glow: #e10361;
+  --neon-purple: #9461fd;
+  --neon-purple-glow: #4003e6;
+  --neon-blue: #2dd9fe;
+  --neon-blue-glow: #00a3d5;
+  --neon-green: #00fe9b;
+  --neon-green-glow: #02c435;
+  --neon-yellow: #ffdb4e;
+  --neon-yellow-glow: #b48505;
+  --neon-white: #fefefe;
+  --neon-white-glow: #ffffff;
   --color-bg-blue: #00020b;
-  --color-main-white: white;
-  --color-main-blue: #39deff;
-  --color-main-purple: #ff94db;
-  --color-main-yellow: #f0c449;
-  --color-main-red: #a71d31;
 }
 
 *,
@@ -28,6 +36,7 @@ body {
   width: 100vw;
   border: 1px black solid;
   background-color: var(--color-bg-blue);
+  position: relative;
 }
 
 .status {
@@ -37,13 +46,14 @@ body {
   background-color: transparent;
   font-size: 2rem;
   text-align: center;
-  color: var(--color-main-white);
-  border-bottom: 2px solid var(--color-main-white);
+  color: var(--neon-white);
+  border-bottom: 2px solid var(--neon-white);
   padding-bottom: 20px;
+  letter-spacing: 5px;
 
-  text-shadow: 0 0 0px var(--color-main-white), 0 0 10px var(--color-main-white),
-    0 0 0px var(--color-main-white), 0 0 0px var(--color-main-white),
-    0 0 10px var(--color-main-white);
+  text-shadow: 0 0 0px var(--neon-white-glow), 0 0 10px var(--neon-white-glow),
+    0 0 0px var(--neon-white-glow), 0 0 0px var(--neon-white-glow),
+    0 0 10px var(--neon-white-glow);
 }
 
 .board-container {
@@ -66,45 +76,45 @@ body {
 .square {
   height: var(--cell-size);
   width: var(--cell-size);
-  border: 2px solid var(--color-main-yellow);
-  box-shadow: 0px 0px 10px var(--color-main-yellow);
+  border: 2px solid var(--neon-yellow);
+  box-shadow: 0px 0px 10px var(--neon-yellow-glow);
   font-size: 3rem;
-  color: var(--color-main-blue);
+  color: var(--neon-blue);
   cursor: pointer;
   background-color: transparent;
 }
 
 .moves {
-  margin-top: 30px;
-  width: 500px;
-  height: 300px;
+  position: absolute;
+  top: 290px;
+  left: 10px;
+  width: 250px;
+  height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 1px white solid;
-  padding: 15px;
-  color: #a71d31;
-  border: 1px solid #a71d31;
-  box-shadow: 0 0 5px #a71d31, 0 0 5px inset;
+  /* border: 1px white solid; */
 }
 
 .move-btn {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #fff;
   margin-inline: 15px;
+  height: 20px;
   padding: 20px;
-  max-width: auto;
-  height: 40px;
+  max-width: 160px;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   font-size: 1em;
-  color: #8ce436;
-  border: 1px solid #8ce436;
-  box-shadow: 0 0 5px #8ce436, 0 0 5px inset;
+  border-radius: 10%;
+  color: var(--neon-green);
+  border: 1px solid var(--neon-green-glow);
+  box-shadow: 0 0 5px var(--neon-green-glow), 0 0 5px inset;
 }
 
 /* ------- */
@@ -135,17 +145,17 @@ body {
 /* Classes */
 /* ------- */
 .square.x {
-  color: var(--color-main-blue);
-  text-shadow: 0 0 0px var(--color-main-blue), 0 0 0px var(--color-main-blue),
-    0 0 10px var(--color-main-blue), 0 0 40px var(--color-main-blue),
-    0 0 0px var(--color-main-blue);
+  color: var(--neon-blue);
+  text-shadow: 0 0 0px var(--neon-blue-glow), 0 0 0px var(--neon-blue-glow),
+    0 0 10px var(--neon-blue-glow), 0 0 40px var(--neon-blue-glow),
+    0 0 0px var(--neon-blue-glow);
 }
 
 .square.circle {
-  color: var(--color-main-purple);
-  text-shadow: 0 0 0px var(--color-main-purple),
-    0 0 0px var(--color-main-purple), 0 0 10px var(--color-main-purple),
-    0 0 40px var(--color-main-purple), 0 0 0px var(--color-main-purple);
+  color: var(--neon-pink);
+  text-shadow: 0 0 0px var(--neon-pink-glow), 0 0 0px var(--neon-pink-glow),
+    0 0 10px var(--neon-pink-glow), 0 0 40px var(--neon-pink-glow),
+    0 0 0px var(--neon-pink-glow);
 }
 
 button:hover {
