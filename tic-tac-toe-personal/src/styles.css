@@ -3,7 +3,7 @@
   --neon-red: #ff5161;
   --neon-red-glow: #d30302;
   --neon-pink: #ff53cd;
-  --neon-pink-glow: #e10361;
+  --neon-pink-glow: #eb478b;
   --neon-purple: #9461fd;
   --neon-purple-glow: #4003e6;
   --neon-blue: #2dd9fe;
@@ -77,7 +77,7 @@ body {
   height: var(--cell-size);
   width: var(--cell-size);
   border: 2px solid var(--neon-yellow);
-  box-shadow: 0px 0px 10px var(--neon-yellow-glow);
+  box-shadow: 0px 0px 10px 1.5px var(--neon-yellow-glow);
   font-size: 3rem;
   color: var(--neon-blue);
   cursor: pointer;
@@ -86,10 +86,10 @@ body {
 
 .moves {
   position: absolute;
-  top: 290px;
-  left: 10px;
+  top: 300px;
+  left: 15px;
   width: 250px;
-  height: 550px;
+  height: 520px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,7 +105,7 @@ body {
   color: #fff;
   margin-inline: 15px;
   height: 20px;
-  padding: 20px;
+  padding: 18px 10px;
   max-width: 160px;
   font-weight: 500;
   background: transparent;
