@@ -97,9 +97,14 @@ class Game extends Component {
       )
     })
 
-    let status = winner
-      ? `Winner: ${winner}`
-      : ` Next player: ${this.state.xIsNext ? "X" : "O"}`
+    let status
+    if (this.state.stepNumber >= 9) {
+      status = "Game Over!"
+    } else if (winner) {
+      status = `${winner} wins!`
+    } else {
+      status = this.state.xIsNext ? "Turn: X" : "Turn: O"
+    }
 
     return (
       <>
