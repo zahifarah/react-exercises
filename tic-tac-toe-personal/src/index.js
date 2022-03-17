@@ -147,3 +147,33 @@ function calculateWinner(squares) {
   }
   return null
 }
+
+// function calculateWinner(squares) {
+//   const lines = [
+//     [0, 1, 2],
+//     [3, 4, 5],
+//     [6, 7, 8],
+//     [0, 3, 6],
+//     [1, 4, 7],
+//     [2, 5, 8],
+//     [0, 4, 8], // diagonal down
+//     [2, 4, 6], // diagonal up
+//   ]
+
+//   for (let i = 0; i < lines.length; i++) {
+//     const [a, b, c] = lines[i]
+//     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+//       if (a === 0 && b === 4 && c === 8) {
+//         // diagonal down
+//         return { result: squares[a], line: [a, b, c] }
+//       } else if (a === 2 && b === 4 && c === 6) {
+//         // diagonal up
+//         return { result: squares[a], line: [a, b, c] }
+//       } else {
+//         // straight line
+//         return { result: squares[a], line: [a, b, c] }
+//       }
+//     }
+//   }
+//   return null
+// }
