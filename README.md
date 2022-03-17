@@ -34,3 +34,8 @@
 
 - Create a calculator app without using any math library.
 - <img src="./screenshots/ss_calculator.png" height="400">
+
+## 8. tic-tac-toe
+
+- Create and style a basic tic-tac-toe game
+- <img src="./screenshots/ss_tic-tac-toe.png" height="400">
