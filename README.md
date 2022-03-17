@@ -38,4 +38,4 @@
 ## 8. tic-tac-toe
 
 - Create and style a basic tic-tac-toe game
-- <img src="./screenshots/ss_tic-tac-toe.png" height="400">
+- <img src="./screenshots/ss_tic-tac-toe.png" height="500">
