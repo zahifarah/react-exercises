@@ -36,26 +36,23 @@ const App = () => {
 
   return (
     <div className="container">
-      <div className="search-bar">
+      <form
+        className="search-form"
+        onSubmit={(event) => {
+          setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`)
+          event.preventDefault()
+        }}>
         <input
-          autoFocus
-          value={query}
           type="text"
-          onKeyDown={handleKeyDown}
+          value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="search-input"
         />
-        <button
-          onClick={() =>
-            setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`)
-          }
-          disabled={isLoading}
-          className="search-button">
+        <button type="submit" disabled={isLoading} className="search-button">
           Search
         </button>
-      </div>
+      </form>
 
-      {/* Display Posts */}
       {isError && <div>Something went wrong...</div>}
       {isLoading ? (
         <LoadingSpinner />
