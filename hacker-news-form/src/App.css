@@ -1,3 +1,13 @@
 html {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(247, 247, 247);
+  height: 100%;
+}
+
+.search-button {
+  margin-left: 5px;
+}
+
+.loading {
+  margin-top: 5px;
+  padding-left: 2px;
 }
