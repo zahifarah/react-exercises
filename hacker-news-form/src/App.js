@@ -5,9 +5,9 @@ import "./App.css"
 
 const App = () => {
   const [data, setData] = useState({ hits: [] })
-  const [query, setQuery] = useState("Redux")
+  const [query, setQuery] = useState("")
   const [url, setUrl] = useState(
-    `https://hn.algolia.com/api/v1/search?query=${query}`
+    `http://hn.algolia.com/api/v1/search?tags=front_page`
   )
   const [isLoading, setIsLoading] = useState(false)
   const [isError, setIsError] = useState(false)
@@ -25,6 +25,7 @@ const App = () => {
     }
 
     fetchData()
+    setQuery("")
   }, [url])
 
   const handleKeyDown = (event) => {
@@ -38,6 +39,7 @@ const App = () => {
       <div className="search-bar">
         <input
           autoFocus
+          value={query}
           type="text"
           onKeyDown={handleKeyDown}
           onChange={(e) => setQuery(e.target.value)}
@@ -59,11 +61,13 @@ const App = () => {
         <LoadingSpinner />
       ) : (
         <ul>
-          {data.hits.map((item) => (
-            <li key={item.objectID}>
-              <a href={item.url}>{item.title}</a>
-            </li>
-          ))}
+          {data.hits.map((item) => {
+            return (
+              <li key={item.objectID}>
+                <a href={item.url}>{item.title}</a>
+              </li>
+            )
+          })}
         </ul>
       )}
     </div>
