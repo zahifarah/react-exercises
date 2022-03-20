@@ -28,12 +28,6 @@ const App = () => {
     setQuery("")
   }, [url])
 
-  const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
-      setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`)
-    }
-  }
-
   return (
     <div className="container">
       <form
