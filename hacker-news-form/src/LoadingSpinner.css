@@ -13,5 +13,5 @@
   border: 10px solid #dcdbdb;
   border-top: 10px solid #fe6f6f;
   border-radius: 50%;
-  animation: spinner 0.3s linear infinite;
+  animation: spinner 0.1s linear infinite;
 }

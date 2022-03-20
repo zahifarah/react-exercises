@@ -10,21 +10,18 @@ const App = () => {
     `https://hn.algolia.com/api/v1/search?query=${query}`
   )
   const [isLoading, setIsLoading] = useState(false)
-  const [errorMessage, setErrorMessage] = useState("")
+  const [isError, setIsError] = useState(false)
 
   useEffect(() => {
     const fetchData = async () => {
+      setIsError(false)
       setIsLoading(true)
+
       fetch(url)
         .then((res) => res.json())
-        .then((json) => {
-          setData(json)
-          setIsLoading(false)
-        })
-        .catch(() => {
-          setErrorMessage("Unable to fetch posts")
-          setIsLoading(false)
-        })
+        .then((json) => setData(json))
+        .catch(() => setIsError(true))
+        .then(() => setIsLoading(false))
     }
 
     fetchData()
@@ -57,6 +54,7 @@ const App = () => {
       </div>
 
       {/* Display Posts */}
+      {isError && <div>Something went wrong...</div>}
       {isLoading ? (
         <LoadingSpinner />
       ) : (
