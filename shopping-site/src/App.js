@@ -5,18 +5,9 @@ import { items } from "./static-data"
 
 import "./App.css"
 
-const Content = ({ tab }) => {
-  switch (tab) {
-    default:
-    case "items":
-      return <ItemPage items={items} />
-    case "cart":
-      return <span>render cart for case "cart"</span>
-  }
-}
-
 const App = () => {
   const [activeTab, setActiveTab] = useState("items")
+
   return (
     <div className="App">
       <Nav activeTab={activeTab} onTabChange={setActiveTab} />
@@ -25,6 +16,16 @@ const App = () => {
       </main>
     </div>
   )
+}
+
+const Content = ({ tab }) => {
+  switch (tab) {
+    default:
+    case "items":
+      return <ItemPage items={items} />
+    case "cart":
+      return <span>render cart for case "cart"</span>
+  }
 }
 
 export default App
