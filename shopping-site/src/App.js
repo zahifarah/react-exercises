@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 import Nav from "./Nav"
+import ItemPage from "./ItemPage"
+import { items } from "./static-data"
 
 import "./App.css"
 
@@ -7,7 +9,7 @@ const Content = ({ tab }) => {
   switch (tab) {
     default:
     case "items":
-      return <span>render items for case "items"</span>
+      return <ItemPage items={items} />
     case "cart":
       return <span>render cart for case "cart"</span>
   }
