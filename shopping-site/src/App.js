@@ -1,10 +1,16 @@
 import React from "react"
+import Nav from "./Nav"
+
+import "./App.css"
 
 const App = () => {
   return (
-    <>
-      <div>Shopping Site</div>
-    </>
+    <div className="App">
+      <Nav />
+      <main className="App-content">
+        <span>Empty</span>
+      </main>
+    </div>
   )
 }
 

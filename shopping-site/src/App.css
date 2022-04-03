@@ -1,0 +1,38 @@
+body {
+  background-color: #eaeaea;
+}
+
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.App-nav {
+  margin: 20px;
+  padding: 10px;
+  border-bottom: 2px solid #508fca;
+}
+
+.App-nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.App-nav button {
+  font-size: 26px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.App-nav-item {
+  list-style: none;
+  display: inline-block;
+  margin-right: 32px;
+  border-bottom: 4px solid transparent;
+}
+
+.App-content {
+  margin: 0 20px;
+  font-size: 24px;
+}
