@@ -6,11 +6,10 @@ import "./CartPage.css"
 
 function CartPage({ items, onAddOne, onRemoveOne }) {
   const calculateTotal = () => {
-    let total = 0
-    items.forEach((item) => {
-      total += item.price * item.count
-    })
-    return total
+    const total = items.reduce((total, item) => {
+      return (total += item.price * item.count)
+    }, 0)
+    return Math.ceil(total)
   }
 
   return (
