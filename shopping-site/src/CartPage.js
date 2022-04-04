@@ -5,6 +5,17 @@ import Item from "./Item"
 import "./CartPage.css"
 
 function CartPage({ items, onAddOne, onRemoveOne }) {
+  let total = 0
+
+  const calculateTotal = () => {
+    items.forEach((item) => {
+      total += item.price * item.count
+    })
+    return total
+  }
+
+  calculateTotal()
+
   return (
     <ul className="CartPage-items">
       {items.map((item) => (
@@ -26,6 +37,7 @@ function CartPage({ items, onAddOne, onRemoveOne }) {
           </Item>
         </li>
       ))}
+      <div className="CartItem-total">Total: ${total}</div>
     </ul>
   )
 }

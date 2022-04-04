@@ -30,3 +30,9 @@
 button:hover {
   cursor: pointer;
 }
+
+.CartItem-total {
+  text-align: right;
+  margin-top: 15px;
+  font-weight: 600;
+}
