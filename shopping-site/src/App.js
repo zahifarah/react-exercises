@@ -1,10 +1,8 @@
 import React, { useState } from "react"
 import Nav from "./Nav"
-import ItemPage from "./ItemPage"
+import Content from "./Content"
 
-import { items } from "./static-data"
 import "./App.css"
-import CartPage from "./CartPage"
 
 const summarizeCart = (cart) => {
   const groupedItems = cart.reduce((summary, item) => {
@@ -13,8 +11,6 @@ const summarizeCart = (cart) => {
       count: 0,
     }
     summary[item.id].count++
-    // console.log(summary)
-    // console.log(summary[item.id])
     return summary
   }, {})
 
@@ -53,22 +49,6 @@ const App = () => {
       </main>
     </div>
   )
-}
-
-const Content = ({ tab, cart, onAddToCart, onRemoveItem }) => {
-  switch (tab) {
-    default:
-    case "items":
-      return <ItemPage items={items} onAddToCart={onAddToCart} />
-    case "cart":
-      return (
-        <CartPage
-          items={cart}
-          onAddOne={onAddToCart}
-          onRemoveOne={onRemoveItem}
-        />
-      )
-  }
 }
 
 export default App
