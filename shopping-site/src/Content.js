@@ -3,7 +3,7 @@ import CartPage from "./CartPage"
 
 import { items } from "./static-data"
 
-const Content = ({ tab, cart, onAddToCart, onRemoveItem }) => {
+const Content = ({ tab, cart, onAddToCart, onRemoveItem, calculateTotal }) => {
   switch (tab) {
     default:
     case "items":
@@ -14,6 +14,7 @@ const Content = ({ tab, cart, onAddToCart, onRemoveItem }) => {
           items={cart}
           onAddOne={onAddToCart}
           onRemoveOne={onRemoveItem}
+          calculateTotal={calculateTotal}
         />
       )
   }

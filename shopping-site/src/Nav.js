@@ -1,12 +1,12 @@
 import React from "react"
 
-const Nav = ({ activeTab, onTabChange }) => {
+const Nav = ({ cart, activeTab, onTabChange, calculateTotal }) => {
   const itemClass = (tabName) =>
     `App-nav-item ${activeTab === tabName ? "selected" : ""}`
 
   return (
     <nav className="App-nav">
-      <ul>
+      <ul className="App-nav-tags">
         <li className={itemClass("items")}>
           <button onClick={() => onTabChange("items")}>Items</button>
         </li>
@@ -14,6 +14,9 @@ const Nav = ({ activeTab, onTabChange }) => {
           <button onClick={() => onTabChange("cart")}>Cart</button>
         </li>
       </ul>
+      <div className="App-nav-total">
+        {cart.length} items (${calculateTotal(cart)})
+      </div>
     </nav>
   )
 }

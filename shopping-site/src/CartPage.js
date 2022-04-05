@@ -1,11 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Item from "./Item"
-import CartTotal from "./CartTotal"
 
 import "./CartPage.css"
 
-function CartPage({ items, onAddOne, onRemoveOne }) {
+function CartPage({ items, onAddOne, onRemoveOne, calculateTotal }) {
   const emptyCart = (
     <div className="CartItem-emptyCart">
       <p>Your Cart is empty</p>
@@ -34,7 +33,7 @@ function CartPage({ items, onAddOne, onRemoveOne }) {
           </Item>
         </li>
       ))}
-      <CartTotal items={items} />
+      <div className="CartItem-total">Total: ${calculateTotal(items)}</div>
     </ul>
   ) : (
     emptyCart

@@ -36,15 +36,28 @@ const App = () => {
     }
   }
 
+  const calculateTotal = (arr) => {
+    const total = arr.reduce((total, item) => {
+      return (total += item.price * item.count)
+    }, 0)
+    return Math.ceil(total)
+  }
+
   return (
     <div className="App">
-      <Nav activeTab={activeTab} onTabChange={setActiveTab} />
+      <Nav
+        activeTab={activeTab}
+        onTabChange={setActiveTab}
+        cart={summarizeCart(cart)}
+        calculateTotal={calculateTotal}
+      />
       <main className="App-content">
         <Content
           tab={activeTab}
           cart={summarizeCart(cart)}
           onAddToCart={addToCart}
           onRemoveItem={removeItem}
+          calculateTotal={calculateTotal}
         />
       </main>
     </div>
