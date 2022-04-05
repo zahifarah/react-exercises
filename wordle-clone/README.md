@@ -2,8 +2,8 @@
 
 ### Concepts
 
-. Active Row
-. Active Column
+- Active Row
+- Active Column
 
 ### Board
 
