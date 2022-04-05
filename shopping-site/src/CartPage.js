@@ -12,6 +12,12 @@ function CartPage({ items, onAddOne, onRemoveOne }) {
     return Math.ceil(total)
   }
 
+  const displayTotalCost = calculateTotal() ? (
+    <div className="CartItem-total">Total: ${calculateTotal()}</div>
+  ) : (
+    ""
+  )
+
   return (
     <ul className="CartPage-items">
       {items.map((item) => (
@@ -33,7 +39,7 @@ function CartPage({ items, onAddOne, onRemoveOne }) {
           </Item>
         </li>
       ))}
-      <div className="CartItem-total">Total: ${calculateTotal()}</div>
+      {displayTotalCost}
     </ul>
   )
 }
