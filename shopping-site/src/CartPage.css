@@ -36,3 +36,8 @@ button:hover {
   margin-top: 15px;
   font-weight: 600;
 }
+
+.CartItem-emptyCart {
+  text-align: center;
+  margin-top: 60px;
+}

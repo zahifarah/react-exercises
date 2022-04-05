@@ -18,7 +18,7 @@ function CartPage({ items, onAddOne, onRemoveOne }) {
     ""
   )
 
-  return (
+  return items.length ? (
     <ul className="CartPage-items">
       {items.map((item) => (
         <li key={item.id} className="CartPage-item">
@@ -41,6 +41,11 @@ function CartPage({ items, onAddOne, onRemoveOne }) {
       ))}
       {displayTotalCost}
     </ul>
+  ) : (
+    <div className="CartItem-emptyCart">
+      <p>Your Cart is empty</p>
+      <p>Why not add expensive products to it?</p>
+    </div>
   )
 }
 CartPage.propTypes = {
