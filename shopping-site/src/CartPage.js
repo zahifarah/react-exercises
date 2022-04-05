@@ -1,21 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Item from "./Item"
+import CartTotal from "./CartTotal"
 
 import "./CartPage.css"
 
 function CartPage({ items, onAddOne, onRemoveOne }) {
-  const calculateTotal = () => {
-    const total = items.reduce((total, item) => {
-      return (total += item.price * item.count)
-    }, 0)
-    return Math.ceil(total)
-  }
-
-  const displayTotalCost = calculateTotal() ? (
-    <div className="CartItem-total">Total: ${calculateTotal()}</div>
-  ) : (
-    ""
+  const emptyCart = (
+    <div className="CartItem-emptyCart">
+      <p>Your Cart is empty</p>
+      <p>Why not add expensive products to it?</p>
+    </div>
   )
 
   return items.length ? (
@@ -39,13 +34,10 @@ function CartPage({ items, onAddOne, onRemoveOne }) {
           </Item>
         </li>
       ))}
-      {displayTotalCost}
+      <CartTotal items={items} />
     </ul>
   ) : (
-    <div className="CartItem-emptyCart">
-      <p>Your Cart is empty</p>
-      <p>Why not add expensive products to it?</p>
-    </div>
+    emptyCart
   )
 }
 CartPage.propTypes = {
