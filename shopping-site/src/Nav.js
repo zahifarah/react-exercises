@@ -13,11 +13,11 @@ const Nav = ({
   let itemString = cart.length > 1 ? "items" : "item"
 
   const cartStatus = cart.length ? (
-    <div className="App-nav-total">
+    <button className="App-nav-total" onClick={() => onTabChange("cart")}>
       {cart.length} {itemString} (${calculateTotal(summarizedCart)})
-    </div>
+    </button>
   ) : (
-    <div className="App-nav-total">Empty Cart</div>
+    <button className="App-nav-total">Empty Cart</button>
   )
 
   return (

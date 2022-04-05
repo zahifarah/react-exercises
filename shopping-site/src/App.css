@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
 }
@@ -9,7 +15,7 @@ body {
 
 .App-nav {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 80% 20%;
   margin: 20px;
   padding: 10px;
   border-bottom: 2px solid #508fca;
@@ -47,9 +53,16 @@ body {
   border-bottom-color: #ffaa3f;
 }
 
-.App-nav-total {
+.App-nav .App-nav-total {
   font-size: 22px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: flex-end;
+  align-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.App-nav .App-nav-total:hover {
+  color: #999;
 }
