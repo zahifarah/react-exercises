@@ -10,6 +10,14 @@ const Nav = ({
   const itemClass = (tabName) =>
     `App-nav-item ${activeTab === tabName ? "selected" : ""}`
 
+  const cartStatus = cart.length ? (
+    <div className="App-nav-total">
+      {cart.length} items (${calculateTotal(summarizedCart)})
+    </div>
+  ) : (
+    <div className="App-nav-total">Empty Cart</div>
+  )
+
   return (
     <nav className="App-nav">
       <ul className="App-nav-tags">
@@ -20,9 +28,7 @@ const Nav = ({
           <button onClick={() => onTabChange("cart")}>Cart</button>
         </li>
       </ul>
-      <div className="App-nav-total">
-        {cart.length} items (${calculateTotal(summarizedCart)})
-      </div>
+      {cartStatus}
     </nav>
   )
 }
