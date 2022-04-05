@@ -39,3 +39,9 @@
 
 - Create and style a basic tic-tac-toe game
 - <img src="./screenshots/ss_tic-tac-toe.png" height="500">
+
+## 9. shopping site
+
+- Create and style a basic shopping site
+- <img src="./screenshots/ss_shopping-site_1:2.png" width="600">
+- <img src="./screenshots/ss_shopping-site_2:2.png" width="600">
