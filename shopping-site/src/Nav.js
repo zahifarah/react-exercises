@@ -10,11 +10,11 @@ const Nav = ({
   const itemClass = (tabName) =>
     `App-nav-item ${activeTab === tabName ? "selected" : ""}`
 
-  let itemOrItems = cart.length > 1 ? "items" : "item"
+  let itemString = cart.length > 1 ? "items" : "item"
 
   const cartStatus = cart.length ? (
     <div className="App-nav-total">
-      {cart.length} {itemOrItems} (${calculateTotal(summarizedCart)})
+      {cart.length} {itemString} (${calculateTotal(summarizedCart)})
     </div>
   ) : (
     <div className="App-nav-total">Empty Cart</div>
