@@ -1,6 +1,12 @@
 import React from "react"
 
-const Nav = ({ cart, activeTab, onTabChange, calculateTotal }) => {
+const Nav = ({
+  cart,
+  summarizedCart,
+  activeTab,
+  onTabChange,
+  calculateTotal,
+}) => {
   const itemClass = (tabName) =>
     `App-nav-item ${activeTab === tabName ? "selected" : ""}`
 
@@ -15,7 +21,7 @@ const Nav = ({ cart, activeTab, onTabChange, calculateTotal }) => {
         </li>
       </ul>
       <div className="App-nav-total">
-        {cart.length} items (${calculateTotal(cart)})
+        {cart.length} items (${calculateTotal(summarizedCart)})
       </div>
     </nav>
   )

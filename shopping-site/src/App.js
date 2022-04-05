@@ -48,13 +48,14 @@ const App = () => {
       <Nav
         activeTab={activeTab}
         onTabChange={setActiveTab}
-        cart={summarizeCart(cart)}
+        cart={cart}
+        summarizedCart={summarizeCart(cart)}
         calculateTotal={calculateTotal}
       />
       <main className="App-content">
         <Content
           tab={activeTab}
-          cart={summarizeCart(cart)}
+          summarizedCart={summarizeCart(cart)}
           onAddToCart={addToCart}
           onRemoveItem={removeItem}
           calculateTotal={calculateTotal}
