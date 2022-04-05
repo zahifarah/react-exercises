@@ -1,10 +1,11 @@
 ## Wordle Rules & Requirements
 
-Concepts:
+### Concepts
+
 . Active Row
 . Active Column
 
-### <Board />
+### Board
 
 When you press enter, you see the status of your last guess:
 
@@ -16,7 +17,7 @@ When you press enter, you see the status of your last guess:
   - Shake the active row if word is NOT in list of words ❌
   - Letters rotate + change background from black to gray
 
-### <Keyboard />
+### Keyboard
 
 Reflects Board knowledge (another source for same info). Convenient for humans.
 
