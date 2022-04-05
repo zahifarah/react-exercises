@@ -1,8 +1,8 @@
 ## Wordle Rules & Requirements
 
 Concepts:
-<> Active Row
-<> Active Column
+. Active Row
+. Active Column
 
 ### <Board />
 
