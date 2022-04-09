@@ -76,11 +76,42 @@ p {
 /* --
 Rules
 -- */
-.wrapper {
+.app-container {
   height: 100vh;
   background-color: var(--clr-darkest);
+  display: flex;
+  flex-direction: column;
 }
 
-.app-container {
+.post {
   background-color: var(--clr-dark);
+  margin-bottom: 10px;
+}
+
+.post:first-child {
+  margin-top: 10px;
+}
+
+.header-container {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: start;
+  margin: 0 8px 8px;
+  position: relative;
+  background-color: gray;
+}
+
+.thumbnail {
+  display: inline-block;
+  height: 20px;
+  margin-right: 6px;
+  vertical-align: middle;
+  width: 20px;
+}
+
+.information-container {
+  display: flex;
 }
