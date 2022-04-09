@@ -1,0 +1,74 @@
+/* --------------
+Custom Properties 
+-------------- */
+:root {
+  /* colors */
+  --clr-darkest: rgb(3, 3, 3);
+  --clr-dark: rgb(26, 26, 28);
+  --clr-bright: rgb(129, 131, 132);
+  --clr-brightest: rgb(215, 218, 220);
+
+  /* font-sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /* font-families */
+  --ff-ibm: "IBM Plex Sans", sans-serif;
+}
+
+/* ----------
+General Reset
+---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body,
+#app,
+.container {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+  color: var(--clr-brightest);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
