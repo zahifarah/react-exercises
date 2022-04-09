@@ -72,3 +72,15 @@ h6,
 p {
   font-weight: 400;
 }
+
+/* --
+Rules
+-- */
+.wrapper {
+  height: 100vh;
+  background-color: var(--clr-darkest);
+}
+
+.app-container {
+  background-color: var(--clr-dark);
+}
