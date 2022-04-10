@@ -93,15 +93,13 @@ Rules
 }
 
 .header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: start;
   margin: 0 8px 8px;
-  position: relative;
-  background-color: gray;
 }
 
 .thumbnail {
@@ -113,5 +111,9 @@ Rules
 }
 
 .information-container {
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  overflow: hidden;
 }
