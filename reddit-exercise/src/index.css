@@ -8,16 +8,6 @@ Custom Properties
   --clr-bright: rgb(129, 131, 132);
   --clr-brightest: rgb(215, 218, 220);
 
-  /* font-sizes */
-  --fs-900: 9.375rem;
-  --fs-800: 6.25rem;
-  --fs-700: 3.5rem;
-  --fs-600: 2rem;
-  --fs-500: 1.75rem;
-  --fs-400: 1.125rem;
-  --fs-300: 1rem;
-  --fs-200: 0.875rem;
-
   /* font-families */
   --ff-ibm: "IBM Plex Sans", sans-serif;
 }
@@ -35,12 +25,9 @@ General Reset
 html,
 body,
 #app,
-.container {
+.app-wrapper {
   height: 100%;
-}
-
-body {
-  background-color: black;
+  background-color: gray;
 }
 
 /* make images easier to work with */
@@ -60,7 +47,7 @@ p,
 figure,
 picture {
   margin: 0;
-  color: var(--clr-brightest);
+  color: var(--clr-darkest);
 }
 
 h1,
@@ -76,44 +63,55 @@ p {
 /* --
 Rules
 -- */
+.app-wrapper {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .app-container {
+  background-color: white;
   height: 100vh;
-  background-color: var(--clr-darkest);
+  width: 80%;
   display: flex;
   flex-direction: column;
 }
 
 .post {
-  background-color: var(--clr-dark);
+  display: flex;
+  height: 150px;
+  width: auto;
+  margin-bottom: 5px;
+  background-color: greenyellow;
+}
+
+.reputation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+  background-color: red;
+}
+.reputation-ele {
   margin-bottom: 10px;
 }
-
-.post:first-child {
-  margin-top: 10px;
+.reputation-ele:last-child {
+  margin-bottom: 0;
 }
 
-.header-container {
+.thumbnail-container {
   display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  margin: 0 8px 8px;
+  flex: 1.5 1 0;
 }
-
 .thumbnail {
-  display: inline-block;
-  height: 20px;
-  margin-right: 6px;
-  vertical-align: middle;
-  width: 20px;
+  background-image: url("https://b.thumbs.redditmedia.com/eLMKVL5FFpkQqzB-QsQcaBX14Kwb81BiW5vNz_0N4is.jpg");
+  background-repeat: no-repeat;
+  min-height: 100%;
 }
 
-.information-container {
-  align-items: center;
+.information {
   display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 auto;
-  overflow: hidden;
+  flex: 7 0 0;
+  background-color: orange;
 }
