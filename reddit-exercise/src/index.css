@@ -79,10 +79,9 @@ Rules
 
 .post {
   display: flex;
-  height: 150px;
+  height: 120px;
   width: auto;
   margin-bottom: 5px;
-  background-color: greenyellow;
 }
 
 .reputation {
@@ -91,7 +90,6 @@ Rules
   justify-content: center;
   align-items: center;
   flex: 1 1 0;
-  background-color: red;
 }
 .reputation-ele {
   margin-bottom: 10px;
@@ -102,16 +100,55 @@ Rules
 
 .thumbnail-container {
   display: flex;
-  flex: 1.5 1 0;
-}
-.thumbnail {
-  background-image: url("https://b.thumbs.redditmedia.com/eLMKVL5FFpkQqzB-QsQcaBX14Kwb81BiW5vNz_0N4is.jpg");
-  background-repeat: no-repeat;
-  min-height: 100%;
+  align-items: center;
 }
 
-.information {
+.information-wrapper {
   display: flex;
-  flex: 7 0 0;
+  flex: 7 1 0;
   background-color: orange;
+  align-items: center;
+  justify-content: center;
+}
+
+.information-container {
+  background-color: red;
+  width: 95%;
+}
+
+.title {
+  background-color: cyan;
+  font-size: 22px;
+}
+
+.source {
+  margin-left: 10px;
+  font-size: 15px;
+  font-style: italic;
+  color: gray;
+}
+
+.submitted-by {
+  background-color: yellow;
+  margin-block: 5px;
+}
+
+.options-container {
+  background-color: greenyellow;
+  display: flex;
+}
+
+.options-comments {
+  background-color: gray;
+  margin-inline: 10px;
+}
+
+.options-menu {
+  background-color: red;
+  display: flex;
+  width: 100%;
+}
+
+.options-menu > div {
+  margin-inline-start: 10px;
 }
