@@ -8,9 +8,9 @@ export default function App() {
       <div className="app-container">
         <div className="post">
           <div className="reputation">
-            <div className="reputation-ele">UP</div>
+            <div className="reputation-ele">&#8593;</div>
             <div className="reputation-ele">22</div>
-            <div className="reputation-ele">DW</div>
+            <div className="reputation-ele">&#8595;</div>
           </div>
           <div className="thumbnail-container">
             <img
@@ -42,9 +42,9 @@ export default function App() {
         </div>
         <div className="post">
           <div className="reputation">
-            <div className="reputation-ele">UP</div>
+            <div className="reputation-ele">&#8593;</div>
             <div className="reputation-ele">22</div>
-            <div className="reputation-ele">DW</div>
+            <div className="reputation-ele">&#8595;</div>
           </div>
           <div className="thumbnail-container">
             <img
