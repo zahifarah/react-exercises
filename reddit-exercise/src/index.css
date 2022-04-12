@@ -27,7 +27,7 @@ body,
 #app,
 .app-wrapper {
   height: 100%;
-  background-color: gray;
+  background-color: #eaeaea;
 }
 
 /* make images easier to work with */
@@ -70,7 +70,6 @@ Rules
 }
 
 .app-container {
-  background-color: white;
   height: 100vh;
   width: 80%;
   display: flex;
@@ -82,14 +81,22 @@ Rules
   height: 120px;
   width: auto;
   margin-bottom: 5px;
+  background-color: white;
 }
 
-.reputation {
+.post:first-child {
+  margin-top: 30px;
+}
+
+.reputation-wrapper {
   display: flex;
-  flex-direction: column;
+  flex: 0.8 1 0;
   justify-content: center;
   align-items: center;
-  flex: 1 1 0;
+  text-align: center;
+}
+.reputation-container {
+  font-size: 18px;
 }
 .reputation-ele {
   margin-bottom: 10px;
@@ -101,6 +108,13 @@ Rules
 .thumbnail-container {
   display: flex;
   align-items: center;
+}
+
+.thumbnail {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
 
 .information-wrapper {
